@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+
+<body>
+
+
+	<div class="modal-login" style="display: none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5">
+					<div class="modal-login-form" style='display: none;'>
+						<p>Личный кабинет</p>
+						<form action="">
+							<input type="text" placeholder="Введите логин">
+							<input type="password" placeholder="Введите пароль">
+
+							<input type="checkbox" id="c1">
+							<label for="c1" class="modal-checkbox"><span></span>Запомнить меня</label>
+							<button class="button">Войти в кабинет</button>
+						</form>
+						<img src="img/modal-icon.png" alt=""><a href="#">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="header-logo">
+						<a href="/"><img src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<nav class="header-nav">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</nav>
+					<nav class="header-mobile-nav">
+						<div class="menu-burger">
+							<span class="burger-top"></span>
+							<span class="burger-center"></span>
+							<span class="burger-bottom"></span>
+						</div>
+						<ul style="display: none;">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#modal-login" class="burger-hide">Вход</a></li>
+							<li><a href="#">Регистрация</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-sm-3 hidden-xs">
+					<div class="header-button">
+						<a href="#modal-login">Вход</a>
+						<a href="#" class="button">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="posf"></div>
+	
+	<section class="section-search">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Интернет магазин<br> продажи оригинальных и<br> неоригинальных запчастей</h1>
+					<div class="pre-search"><span>Поиск автозапчасти по коду</span><a href="#">VIN запрос</a></div>
+					<form action="#" class="search-form">
+						<input type="text" placeholder="">
+						<button><img src="img/search-loopa.png" alt=""></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-category">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-4">
+					<div class="category-item">
+						<a href="#"></a>
+						<img src="img/category-1.png" alt="">
+						<h4>Запчасти</h4>
+						<p>Оригинальные и неоригинальные запчасти для всех марок</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="category-item">
+						<a href="#"></a>
+						<img src="img/category-2.png" alt="">
+						<h4>Шины</h4>
+						<p>Большой выбор шин и дисков на любую марку</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="category-item">
+						<a href="#"></a>
+						<img src="img/category-3.png" alt="">
+						<h4>Масла</h4>
+						<p>Каталог масел от различных производителей</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				
+				<div class="col-sm-offset-2 col-sm-4">
+					<div class="category-item">
+						<a href="#"></a>
+						<img src="img/category-4.png" alt="">
+						<h4>Аксессуары</h4>
+						<p>Различные виды аксессуаров от разных производителей</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="category-item">
+						<a href="#"></a>
+						<img src="img/category-5.png" alt="">
+						<h4>Запчасти ТО</h4>
+						<p>Хорошый выбор запчастей ТО на любую марку</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-list-car">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h3 class="list-car-title">Запчасти для автомобилей</h3>
+				</div>
+				<div class="col-sm-offset-1 col-sm-2 col-xs-6">
+					<div class="list-car">
+						<ul>
+							<li><a href="#">Audi</a></li>
+							<li><a href="#">Bmw</a></li>
+							<li><a href="#">Citroёn</a></li>
+							<li><a href="#">Dacia</a></li>
+							<li><a href="#">Ford</a></li>
+							<li><a href="#">Honda</a></li>
+							<li><a href="#">Hyundai</a></li>
+							<li><a href="#">Infinity</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div class="list-car">
+						<ul>
+							<li><a href="#">Isuzu</a></li>
+							<li><a href="#">Kia</a></li>
+							<li><a href="#">Lexus</a></li>
+							<li><a href="#">Mazda</a></li>
+							<li><a href="#">Mercedes</a></li>
+							<li><a href="#">Mini</a></li>
+							<li><a href="#">Mitsubishi</a></li>
+							<li><a href="#">Nissan</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div class="list-car">
+						<ul>
+							<li><a href="#">Opel</a></li>
+							<li><a href="#">Bmw</a></li>
+							<li><a href="#">Peugeot</a></li>
+							<li><a href="#">Renault</a></li>
+							<li><a href="#">Seat</a></li>
+							<li><a href="#">Skoda</a></li>
+							<li><a href="#">Smart</a></li>
+							<li><a href="#">SsangYong</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div class="list-car">
+						<ul>
+							<li><a href="#">Subaru</a></li>
+							<li><a href="#">Suzuki</a></li>
+							<li><a href="#">Toyota</a></li>
+							<li><a href="#">Vauxhall</a></li>
+							<li><a href="#">Volvo</a></li>
+							<li><a href="#">Volkswagen</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-about-and-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="section-about">
+						<h3>О компании</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum 
+							esse vel asperiores tenetur, iure aliquam quae sunt, quibusdam 
+							illo illum, eligendi maiores! ncidunt necessitatibus perspiciatis 
+							nesciunt deserunt, eaque cupiditate error velit quisquam aperiam
+							laborum ut architecto non minus voluptates dolores, consequu 
+							unde et inventore pariatur ipsam maiores, eos dolorem.</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h3>Новости</h3>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="news-item">
+									<div class="news-date">5 Мая 2017</div>
+									<div class="news-title"><a href="#">Открытие нового проекта по продажам автозапчастей</a></div>
+									<div class="news-text">
+										<p>Если в работе сайта или переводе вы 
+											заметили ошибки, недочеты и тд, 
+											пожалуйста напишите нам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="news-item">
+										<div class="news-date">29 Мая 2017</div>
+										<div class="news-title"><a href="#">Скоро открытие нового раздела на нашем сайте</a></div>
+										<div class="news-text">
+											<p>Ровно через неделю будет создан
+												новый раздел на сайте, именно на 
+												нем вы сможите найти много всего
+												для своей машины.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="footer-logo">
+									<img src="img/footer-logo.jpg" alt="">
+									<p>Интернет-магазин по продажам
+										оригинальных и неоригинальных
+										запчастей.</p>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footer-list">
+										<ul>
+											<li><a href="#">Гарантия и возврат</a></li>
+											<li><a href="#">Как сделать заказ</a></li>
+											<li><a href="#">Оплата товара</a></li>
+											<li><a href="#">Доставка товара</a></li>
+											<li><a href="#">Акции магазина</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footer-contact">
+										<div class="footer-address">
+											<img src="img/footer-location.png" alt="">
+											<p>Астана улица Бейсековой 3 ТД "Астыкжан".</p>
+										</div>
+										<div class="footer-tell">
+											<img src="img/footer-phone.png" alt="">
+											<p>+7 (701) 6102737</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footer-copy">
+										<p>© 2017 Fara.kz. Все права защищены.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<link rel="stylesheet" href="css/main.min.css">
+					<script src="js/scripts.min.js"></script>
+				</body>
+				</html>

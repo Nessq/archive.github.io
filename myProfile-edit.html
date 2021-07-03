@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Adminka</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	
+	<!-- Template Basic Images Start -->
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<link rel="icon"  href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+
+<header>
+  <div class="logo"><a href="/">Universe</a></div>
+
+  <div class="header-nav">
+    <div class="icon-btn"><img src="img/icon-btn.svg" alt="" width="28"></div>
+    <div class="header-breadcrumbs">
+      
+        <a href="#" class="">Мой профиль</a>
+      
+        <a href="#" class="">Редактировать</a>
+      
+    </div>
+
+
+  </div>
+
+
+  
+
+  
+    
+    <a href="myProfile.html" class="header-login active"><img src="img/header-login-icon.svg" alt="" width="28"></a>
+  
+  
+</header>
+
+
+
+
+
+<nav>
+  <ul data-active='0'>
+    <li><a href="/">Дашборд</a></li>
+    <li><a href="users.html">Пользователи</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="company-role.html">Компании и роли</a></li>
+    <li><a href="more.html">Дополнительные параметры</a></li>
+    <li><a href="settings.html">Настройки</a></li>
+    <li><a href="control.html">Контроль</a></li>
+  </ul>
+</nav>
+
+
+
+<div class="main">
+
+
+  <div class="content content-profile">
+
+    <div class="container-fluid">
+
+
+      <form action="" class="form" id="form-add">
+        <div class="row">
+          <div class="col-4">
+
+            <div class="form-photo">
+              <img src="" id="img-preview" alt="">
+              <label><input type="file" name="pic[]" id="img-input" /><img src="img/add-photo.svg" alt=""
+                  width="60"></label>
+            </div>
+
+            <div class="input-group">
+              <div class="label">Email</div>
+              <input type="text" name="email" class="input-text">
+            </div>
+
+            <div class="input-group">
+              <div class="label">Телефон</div>
+              <input type="text" name="phone" class="input-text">
+            </div>
+
+            <div class="input-group">
+              <div class="label">Пароль</div>
+              <input type="password" name="password" class="input-text">
+            </div>
+
+            <div class="input-group">
+              <div class="label">Повторите Пароль</div>
+              <input type="password" name="re-password" class="input-text">
+            </div>
+
+          </div>
+
+          <div class="col-8">
+            <div class="sub-title">Личные данные</div>
+
+            <div class="row">
+              <div class="col-6">
+
+                <div class="input-group">
+                  <div class="label">Фамилия</div>
+                  <input type="text" name="phone" class="input-text">
+                </div>
+                <div class="input-group">
+                  <div class="label">Имя</div>
+                  <input type="text" name="phone" class="input-text">
+                </div>
+                <div class="input-group">
+                  <div class="label">Отчество</div>
+                  <input type="text" name="phone" class="input-text">
+                </div>
+                <div class="input-group">
+                  <div class="label">Дата рождения</div>
+                  <input type="text" name="phone" class="input-text">
+                </div>
+                <div class="input-group">
+                  <div class="label">Теги</div>
+                  <!-- <input type="text" class="select-tag" value="" placeholder="Поиск тегов"> -->
+                  <select name="" id="" class="select-tag" name="tag[]" multiple="multiple" placeholder="Поиск тегов">
+                    <option value="1">Маркетинг</option>
+                    <option value="2">Менеджер</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="label">Подразделение</div>
+                  <select name="" id="" class="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <div class="label">Должность</div>
+                  <input type="text" name="phone" class="input-text">
+                </div>
+                <div class="input-group">
+                  <div class="label">Позиция</div>
+                  <select name="" id="" class="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <div class="label">Роли</div>
+                  <select name="" id="" class="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+</div>
+
+<div class="btn-confirm">
+  <a href="#" class="btn-confirm__cancel">Отменить</a>
+  <a href="#" class="btn-confirm__ok" data-form="#form-add">Сохранить изменения</a>
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
+
+<link rel="stylesheet" href="libs/chartist-js/dist/chartist.css">
+<script src="libs/chartist-js/dist/chartist.min.js"></script>
+
+<!-- <link rel="stylesheet" href="libs/selectize.js/dist/css/selectize.css"> -->
+<link rel="stylesheet" href="libs/selectize.js/dist/css/selectize.default.css">
+<script src="libs/selectize.js/dist/js/standalone/selectize.min.js"></script>
+
+
+<script src="js/scripts.min.js"></script>
+<script src="js/forms.js"></script>
+
+</body>
+</html>

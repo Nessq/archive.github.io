@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script>
+		var G_SITE = "ЖК ОАЗИС";
+	</script>
+	<meta charset="utf-8">
+
+	<title>ЖК ОАЗИС</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#ffcc33">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#ffcc33">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffcc33">
+
+	
+</head>
+
+<body>
+
+	<div class="preload" style="opacity: 1; transition: all 1s ease; position: fixed; z-index: 99999999; width: 100%; height: 100%; background-color: #fff;"></div>
+
+	<header>
+		<div class="navbar-mobile" style="display: none;">
+			<div class="navbar-mobile-flex">
+				<div class="navbar-mobile-col">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="navbar-mobile-col">
+					<a href="tel:‎+380973432003" class="phone-number">+38 (097) 343-20-03</a>
+					<button id="menu-btn" class="menu-toggle">
+							<span class="dash"></span>
+							<span class="dash"></span>
+							<span class="dash"></span>
+					</button>
+				</div>
+			</div>
+			<nav style="display: none">
+				<ul>
+					<li><a href="#a-main">Главная</a></li>
+					<li><a href="#a-main-slider">Фотографии</a></li>
+					<li><a href="#a-filter">Планировки</a></li>
+					<li><a href="#a-content-slider">Инфраструктура</a></li>
+					<li><a href="#a-docs">Документы</a></li>
+					<li><a href="#a-footer-map">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="navbar-scroll">
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#a-main">Главная</a></li>
+						<li><a href="#a-main-slider">Фотографии</a></li>
+						<li><a href="#a-filter">Планировки</a></li>
+						<li><a href="#a-content-slider">Инфраструктура</a></li>
+						<li><a href="#a-docs">Документы</a></li>
+						<li><a href="#a-footer-map">Контакты</a></li>
+						<li><a data-fancybox data-src="#modal-call" href="javascript:;" class="button"><span class="animation-btn"></span><span class="js__btn-content" data-tell="+38 (097) 343-20-03">+38 (097) 343-20-03</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+					</div>
+					<div class="col-md-5 mob-nav">
+						<nav>
+							<ul>
+								<li><a href="#a-main">Главная</a></li>
+								<li><a href="#a-main-slider">Фотографии</a></li>
+								<li><a href="#a-filter">Планировки</a></li>
+								<li><a href="#a-content-slider">Инфраструктура</a></li>
+								<li><a href="#a-docs">Документы</a></li>
+								<li><a href="#a-footer-map">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3">
+						<div class="navbar__contact">
+							<p>Горячая линия:</p>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="phone-number">+38 (097) 343-20-03</a>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar__bottom-line">
+			<div class="container">
+				<p>ЖК "ОАЗИС" Оболонский район</p>
+			</div>
+		</div>
+
+	</header>
+	
+
+	<section id="a-main" class="main" style="background-image: url(img/main.jpg);">
+		
+		<div class="fluid-block">
+			<h1>Жилой комплекс «ОАЗИС» в Киеве</h1>
+			<p>Апартаменты площадью от 49,00 м² по цене от 836 110 гривен</p>
+			<a data-fancybox data-src="#modal-download" href="javascript:;" class="button"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a>
+		</div>
+
+	</section>
+
+	<div class="main-slider" id="a-main-slider">
+		<div class="main-slider__map">
+			<div id="map"></div>
+
+		</div>
+		<div class="main-slider__btn">
+			<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="main-slider__button"><span class="animation-btn"></span><span class="icon-edit"></span>Записаться на просмотр</a>
+		</div>
+		<div class="main-slider__slider">
+			<div class="owl-carousel main-owl">
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1_5.jpg)"><a href="img/main-owl/1_5.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1_4.jpg)"><a href="img/main-owl/1_4.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1_3.jpg)"><a href="img/main-owl/1_3.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1_2.jpg)"><a href="img/main-owl/1_2.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1_1.jpg)"><a href="img/main-owl/1_1.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+
+	
+	<section class="section filter" id="a-filter">
+		
+		<div class="container">
+			<div class="section-title">
+				<h2>Планировки и цены на апартаменты ЖК «ОАЗИС»</h2>
+				<p>Вы можете выбрать, забронировать и купить апартаменты<br>в жилом комплексе «ОАЗИС» в нашем разделе с планировками и ценами</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="filter-calc">
+						<div class="filter-calc__count-rooms">
+							<p>Количество комнат:</p>
+						</div>
+						<div class="filter-calc__sqs">
+							<p>Метраж м²:</p>
+							<div class="filter-calc__sq" data-sq-min="43" data-sq-max="66">43-66</div>
+							<div class="filter-calc__sq" data-sq-min="54" data-sq-max="79">54-79</div>
+							<div class="filter-calc__sq" data-sq-min="74" data-sq-max="1102">74-102</div>
+						</div>
+						<div class="filter-calc__slider">
+							<p>Цена, тыс $:</p>
+							<div id="slider-range"></div>
+							<div class="pips"></div>
+						</div>
+						<div class="filter-calc__count">
+							<p>Выбрано <span class="count-curennt">13</span> из <span class="count-all">13</span></p>
+						</div>
+						<div class="filter-calc__btn hidden-xs">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="filter-content scrollbar-inner">
+
+						<script>
+							var FILT =	[
+							['sort:-комнатные апартаменты','room:1', 'sq:49.00', 'price:95000', 'src:img/filter/1-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:58.50', 'price:115000', 'src:img/filter/1-2.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:60.00', 'price:120000', 'src:img/filter/1-3.png', 'sold:false'],
+							
+
+							['sort:-комнатные апартаменты','room:2', 'sq:57.00', 'price:118000', 'src:img/filter/2-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:76.00', 'price:138000', 'src:img/filter/2-2.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:89.00', 'price:160000', 'src:img/filter/2-3.png', 'sold:false'],
+							
+
+							['sort:-комнатные апартаменты','room:3', 'sq:60.00', 'price:114000', 'src:img/filter/3-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:86.00', 'price:175000', 'src:img/filter/3-2.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:105.00', 'price:195000', 'src:img/filter/3-3.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:109.00', 'price:184000', 'src:img/filter/3-4.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:122.00', 'price:245000', 'src:img/filter/3-5.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:132.00', 'price:248000', 'src:img/filter/3-6.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:132.00', 'price:260000', 'src:img/filter/3-7.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:132.00', 'price:270000', 'src:img/filter/3-8.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:156.00', 'price:295000', 'src:img/filter/3-9.png', 'sold:false'],
+
+							['sort:-комнатные апартаменты','room:4', 'sq:130.00', 'price:280000', 'src:img/filter/4-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:4', 'sq:131.00', 'price:301000', 'src:img/filter/4-2.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:4', 'sq:145.00', 'price:333000', 'src:img/filter/4-3.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:4', 'sq:165.00', 'price:365000', 'src:img/filter/4-4.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:4', 'sq:173.00', 'price:399800', 'src:img/filter/4-5.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:4', 'sq:195.00', 'price:429000', 'src:img/filter/4-6.png', 'sold:false'],
+
+							['sort:<br>апартаменты','room:5', 'sq:195.00', 'price:490000', 'src:img/filter/5-1.png', 'sold:false'],
+							['sort:<br>апартаменты','room:5', 'sq:305.00', 'price:898000', 'src:img/filter/5-2.jpg', 'sold:false'],
+							['sort:<br>апартаменты','room:5', 'sq:351.00', 'price:983000', 'src:img/filter/5-3.jpg', 'sold:false'],
+							
+
+							]
+						</script>
+
+
+					</div>
+
+					<div class="filter-calc__btn mobile hidden-lg hidden-md hidden-sm">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="section presentation bg">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Презентация ЖК «ОАЗИС»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a data-fancybox data-src="#modal-download" href="javascript:;"><img src="img/book.png" alt="" class="img-responsive"></a>
+			</div>
+			<div class="center"><a data-fancybox data-src="#modal-download" href="javascript:;" class="button button--section"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a></div>
+		</div>
+
+	</section>
+
+
+	<section class="section content-slider" id="a-content-slider">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Инфраструктура ЖК «ОАЗИС»</h2>
+				<p>Застройщик комплекса Корпорация «ДБК-ЖИТЛОБУД» спроектировали инфраструктуру<br> ЖК «ОАЗИС» так, чтобы обеспечить комфорт и только положительные отзывы</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+	<style>
+		.content-owl__photo p{
+			text-shadow: 2px 2px 5px #000;
+		}
+	</style>
+		<div class="owl-carousel content-owl1">
+			
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>храм Рождества Христова</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/2.jpg);"><p>ТРЦ Блокбастер</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>ТРЦ Dream Town</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>Сад Камней</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>парк Наталка</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>Оболонская Набережная</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/9.jpg);"><p>Гольф Клуб</p></div></div>
+			
+			
+		</div>
+
+		<div class="owl-carousel content-owl2">
+			
+		<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>храм Рождества Христова</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/2.jpg);"><p>ТРЦ Блокбастер</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>ТРЦ Dream Town</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>Сад Камней</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>парк Наталка</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>Оболонская Набережная</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/9.jpg);"><p>Гольф Клуб</p></div></div>
+
+		</div>
+
+	</section>
+
+
+	<section class="section video">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Видео про ЖК «ОАЗИС»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="video__youtube-container">
+				<iframe width="710" height="400" src="https://www.youtube.com/embed/-M64sGgdpzQ" frameborder="0" allowfullscreen="" style=""></iframe>
+				<img src="img/video-bg.png" alt="" class="img-responsive hidden-xs">
+			</div>	
+		</div>
+
+	</section>
+
+
+	<section class="section s-etap" id="etap">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Ход строительства ЖК «ОАЗИС»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="etap">
+				<div class="progress-etap" data-start="Tue Jun 01 2015" data-end="Wed Nov 01 2017"></div>	
+			</div>
+
+			<div class="etap__image">
+				<div class="item"><a href="img/etap-image/1__l.png" data-fancybox="gallery2"><img src="img/etap-image/1.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/2__l.png" data-fancybox="gallery2"><img src="img/etap-image/2.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/3__l.png" data-fancybox="gallery2"><img src="img/etap-image/3.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/4__l.png" data-fancybox="gallery2"><img src="img/etap-image/4.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/5__l.png" data-fancybox="gallery2"><img src="img/etap-image/5.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/6__l.png" data-fancybox="gallery2"><img src="img/etap-image/6.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/7__l.png" data-fancybox="gallery2"><img src="img/etap-image/7.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/8__l.png" data-fancybox="gallery2"><img src="img/etap-image/8.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				
+			
+				<div class="item" style="width: 100%; text-align: center; height: auto; max-height: 100%;">
+				<p style="line-height: 1.5;">
+					Проспект Героев Сталинграда, 2Г - заселен в 2006 году<br>
+					Проспект Героев Сталинграда, 4 - заселен в 2003 году<br>
+					Проспект Героев Сталинграда, 4А - заселен в 2006 году<br>
+					Проспект Героев Сталинграда, 6 - заселен в 2004 году<br>
+					Проспект Героев Сталинграда, 6-А - заселен в 2008 году<br>
+					Проспект Героев Сталинграда, 6-Б - заселен в 2001 году<br>
+					Проспект Героев Сталинграда, 8 - заселен в 2004 году<br>
+					Проспект Героев Сталинграда, 8А - заселен в 2007 году<br>
+					Проспект Героев Сталинграда, 10А - заселен в 2003 году<br>
+					Оболонская набережная, 3 - заселен в 2008 году
+
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	</section>
+
+
+	
+
+	<section class="section footer-map bg" id="a-footer-map">
+		<div class="container">
+			<div class="section-title">
+				<h2>Карта расположения ЖК «ОАЗИС»</h2>
+				<p>ЖК «ОАЗИС» расположен по адресу: г. Киев, пр-т Героев Сталинграда<br> Запишитесь на экскурсию через наш сайт</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div id="map2"></div>
+		<div class="container">
+			<div class="center">
+				<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="button"><span class="animation-btn"></span>Записаться на экскурсию на объект</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="navbar__contact">
+						<p>Горячая линия:</p>
+						<a href="tel:+380973432003" class="phone-number">+38 (097) 343-20-03</a>
+						<a  data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="prefooter-p">Брокер проекта — компания КиевДомСервис. Вся представленная информация на сайте не является публичной офертой.</p>
+			<p class="prefooter-p">Брокер проекта - Компания КиевДомСервис</p>
+		</div>
+
+		<div class="footer-bottom-line">
+			<div class="container">
+				<div class="fbl__flex">
+					<a href="#">Апартаменты в жилом комплексе  «ОАЗИС»</a>
+					<a href="#">Сайт жилого комплекса «ОАЗИС»</a>
+					<a href="http://www.KDService.com.ua">Сайт брокера проекта КиевДомСервис</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- modal start -->
+
+	<div style="display: none;" id="modal-download">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__book">
+						<img src="img/book.png" alt="book" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Скачайте презентацию <br>
+							комплекса в 1 клик</h2>
+							<p>Укажите свои контакты и мгновенно  <br>получите презентацию с ценами <br> и планировками в формате PDF</p>
+							<input type="hidden" name="type" value="презентация">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Скачать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;" id="modal-form">
+			
+					<form action="" class="form form-download">
+						<h2>Запросить все планировки</h2>
+							<p>Оставьте заявку на получение всех планировок жилого комплекса</p>
+
+							<input type="hidden" name="">
+
+							<input type="hidden" name="type" value="Запросить все планировки">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+		<div style="display: none;" id="modal-form2">
+			
+					<form action="" class="form form-download">
+						<h2>Рассрочка от застройщика</h2>
+							<p>Укажите свои контактные данные для получения информации по рассрочке</p>
+							<input type="hidden" name="type" value="Рассрочка от застройщика">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+	<div style="display: none;" id="modal-enroll">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__image" style="background-image: url(img/enroll.jpg); -ms-background-position-x: right;
+					background-position-x: right;"></div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Запишитесь на экскурсию комплекса «ОАЗИС»</h2>
+							<p>Укажите свои контакты, менеджер<br> свяжется с вами для уточнения<br> удобного времени экскурсии</p>
+							<input type="hidden" name="type" value="экскурсия">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	<div style="display: none;" id="modal-call">
+		<div class="modal-flex">
+			<div class="modal-col">
+
+				<div class="myslider">
+					<div class="" style="display: block; left: 50%; margin-left: -95px; top: 0px; opacity: 1; height: 190px; width: 190px; z-index: 2;">
+						<img src="img/expert/2.jpg" alt="">
+						<div class="myname">Артём <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: -170px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/4.jpg" alt="">
+						<div class="myname" style="display: block;">Владимир <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: 40px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/3.jpg" alt="">
+						<div class="myname">Анна <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="opacity: 0;">
+						<img src="img/expert/1.jpg" alt="">
+						<div class="myname">Ярослав <span>Ведущий эксперт</span></div>
+					</div>
+				</div>
+
+				<div class="myarrows">
+					<div class="myleft"></div>
+					<div class="myright"></div> 
+				</div>
+
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-call">
+						<h2>Закажите звонок эксперта «ОАЗИС»</h2>
+							<p>Выбранный менеджер свяжется с вами <br>в первую же свободную минуту.</p>
+							<input type="hidden" name="type" value="звонок эксперта">
+							<div class="div_like_inp" id="selectcall">
+								<ul class="menu__ selectlink">
+									<span>Позвоните мне</span>
+									<span class="iic arr_down"></span>
+									<li><a href="#" class="cur_val">в ближайшее время</a>
+										<ul class="submenu">
+											<li class="v_bl" style="display:none;"><a href="#">в ближайшее время</a></li>
+											<li><a href="#">с 10:00 до 12:00</a></li>
+											<li><a href="#">с 12:00 до 14:00</a></li>
+											<li><a href="#">с 14:00 до 16:00</a></li>
+											<li><a href="#">с 16:00 до 18:00</a></li>
+											<li><a href="#">с 18:00 до 20:00</a></li>
+											<li><a href="#">завтра</a></li>
+										</ul>
+									</li>
+								</ul>
+								<input type="hidden" name="whencall" value="в ближайшее время">
+								<input type="hidden" name="whocall">
+							</div>
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div style="display: none;" id="modal-item">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-item__image">
+						<img src="img/filter/1.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-plan">
+						<p class="modal-item__rooms">1-комнатные апартаменты</p>
+						<p class="modal-item__sq">49.50 м²</p>
+						<p class="modal-item__sqm">Цена за м²: 59 000 грн.</p>
+						<p class="modal-item__price">Стоимость:<span>~12 700 000 Р</span></p>
+						<input type="hidden" name="type" value="планировка">
+						<label for="modal-item-name">Имя</label>
+						<input type="text" name="name" placeholder="Имя" required="required" id="modal-item-name">
+						<label for="modal-item-phone">Телефон</label>
+						<input type="text" class="mask validate valid" required="required" id="modal-item-phone" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim">
+						<div class="modal-item-select">
+							<label for="selc">Забронировать на:</label>
+							<select name="reserv" id="selc">
+								<option value="3 дня">3 Дня</option>
+								<option value="7 дней">7 Дней</option>
+								<option value="30 дней">30 Дней</option>
+							</select>
+						</div>
+						<div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+
+						<input type="hidden" name="p_price">
+						<input type="hidden" name="p_sq">
+						<input type="hidden" name="p_rooms">
+						<button type="submit" class="button">Забронировать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: none;" id="modal-send">
+			<h5>Спасибо за заявку</h5>
+			<p>Наш менеджер скоро свяжется с вами.</p>
+		</div>
+
+		<div style="display: none;" id="modal-nosend">
+			<h5>Произошла ошибка</h5>
+			<p>попробуйте еще раз.</p>
+		</div>
+
+
+
+	<!-- modal end -->
+
+	<!-- include -->
+
+	<!-- google map -->
+	<script>
+		function initMap() {
+			var uluru = {lat: 50.496195, lng: 30.520628};
+			var zoom = 15;
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker3.png',
+				map: map
+			});
+			var map2 = new google.maps.Map(document.getElementById('map2'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker2 = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker3.png',
+				map: map2
+			});
+		}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM8FvH0zSAlNoe7zh0pJsFLs0ITRq931k&callback=initMap">
+</script>
+<!-- google map -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

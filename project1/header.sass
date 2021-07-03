@@ -1,0 +1,246 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+.burger
+	position: absolute
+	top: 50%
+	left: 15px
+	width: 34px
+	height: 32px
+	transform: translateY(-50%)
+	transition: all 0.25s
+	display: none
+	cursor: pointer
+	.burg1
+		position: absolute
+		left: 0
+		width: 100%
+		top: 0
+		height: 4px
+		background-color: $ac
+		border-radius: 10px
+	.burg2
+		position: absolute
+		left: 0
+		width: 100%
+		top: 50%
+		transform: translateY(-50%)
+		height: 4px
+		background-color: $ac
+		border-radius: 10px
+	.burg3
+		position: absolute
+		left: 0
+		width: 100%
+		bottom: 0
+		height: 4px
+		background-color: $ac
+		border-radius: 10px
+.burger.active
+	transform: translateY(-50%) rotate(-90deg)
+header
+	margin-top: 20px
+	.lang
+		text-align: right
+		span
+			color: #bdbdbd
+			font-size: 13px
+		i
+			width: 16px
+			height: 11px
+			display: inline-block
+			margin: 0 5px
+			cursor: pointer
+			opacity: 0.65
+			transition: all 0.25s
+			&:hover
+				opacity: 1
+		.rus
+			background-image: url("img/lang/rus.jpg")
+		.eng
+			background-image: url("img/lang/eng.jpg")
+	.wrapLogo
+		text-align: center
+		h1
+			margin-top: 10px
+			a
+				font-size: 14px
+				text-transform: uppercase
+				font-weight: 700
+				letter-spacing: 1px
+				color: $ac
+				&:hover
+					color: $ac
+					text-decoration: none
+nav
+	border-top: 1px solid #eee
+	background-color: #fafafa
+	ul
+		list-style-type: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin: 0
+		padding: 0
+		li
+			padding: 15px 0
+			a
+				color: $d
+				font-weight: 600
+				letter-spacing: 0.25px
+				font-size: 15px
+				padding: 3px 0
+				display: inline-block
+				border-bottom: 2px solid transparent
+				&:hover
+					color: $ac
+					text-decoration: none
+					border-bottom: 2px solid $ac
+.slider
+	.itemSlider
+		text-align: center
+		padding-top: 150px
+		background-image: url("img/slider_bg1.jpg")
+		background-size: cover
+		height: 500px
+		h2
+			font-size: 48px
+			font-weight: 700
+			text-transform: uppercase
+			text-align: center
+			line-height: 1
+			color: #fff
+			margin-bottom: 80px
+			span
+				font-weight: 600
+				font-size: 36px
+
+.main
+	padding-top: 15px
+	.row
+		margin: 0 -30px
+	.wrapItem
+		overflow: hidden
+		margin: 15px 0
+		background-color: #004a86
+		position: relative
+		z-index: 1
+		height: 400px
+		padding: 15px
+		&:hover
+			.content
+				border: 2px solid #fff
+			&:before
+				transform: scale(1.2)		
+	.wrapItemBlack
+		background-color: #000
+	.wrapItem:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+		opacity: .1
+		transition: all 1s
+	.wrapItem1:before
+		background-position: bottom
+		background-image: url("img/wrapContent/1.jpg")
+	.wrapItem2:before
+		background-position: 70% 60%
+		background-image: url("img/wrapContent/2.jpg")
+		opacity: 0.25
+	.wrapItem3:before
+		background-position: 70% 60%
+		background-image: url("img/wrapContent/3.jpg")
+	.wrapItem4:before
+		background-position: 1% 60%
+		background-image: url("img/wrapContent/4.jpg")
+		opacity: 0.8
+	.wrapItem5:before
+		background-position: 15% 60%
+		background-image: url("img/wrapContent/5.jpg")
+		opacity: 0.8
+	.wrapItem6:before
+		background-position: 15% 60%
+		background-image: url("img/wrapContent/6.jpg")
+		opacity: 0.8
+	.content
+		padding: 8px
+		border: 2px solid transparent
+		color: #fff
+		text-align: center
+		height: 100%
+		transition: all 0.25s
+		h3
+			font-size: 18px
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1.5
+			margin: 0
+		p
+			margin: 0
+			margin-bottom: 50px
+		table
+			width: 100%
+			td
+				padding: 8px 5px
+			td:first-child
+				font-size: 15px
+				font-weight: 600
+				text-align: left
+			td:last-child
+				text-align: right
+			tr
+				border-bottom: 1px solid #fff
+		form
+			input
+				width: 100%
+			.inp
+				padding: 8px 10px
+				border-radius: 7px
+				outline: none
+				color: $d
+			input:last-child
+				background-color: transparent
+				outline: none
+				width: auto
+				&:hover
+					background-color: #FFF
+footer
+	font-size: 14px
+	border-top: 1px solid #eee
+	p
+		font-size: 14px
+		span
+			text-align: right
+			float: right
+	i
+		width: 32px
+		height: 32px
+		margin: 0 5px
+		display: inline-block
+		filter: grayscale(1)
+		opacity: 0.4
+		transition: all 0.25s
+		cursor: pointer
+		&:hover
+			filter: none
+			opacity: 1
+	.fb
+		background-image: url("img/fb.png")
+	.tw
+		background-image: url("img/tw.png")
+	table
+		width: 100%
+		td
+			padding: 20px 0
+		td:last-child
+			text-align: right

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script>
+		var G_SITE = "ЖК Кассиопея";
+	</script>
+	<meta charset="utf-8">
+
+	<title>ЖК Кассиопея</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#ffcc33">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#ffcc33">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffcc33">
+
+	
+</head>
+
+<body>
+
+	<div class="preload" style="opacity: 1; transition: all 1s ease; position: fixed; z-index: 99999999; width: 100%; height: 100%; background-color: #fff;"></div>
+
+	<header>
+		<div class="navbar-mobile" style="display: none;">
+			<div class="navbar-mobile-flex">
+				<div class="navbar-mobile-col">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="navbar-mobile-col">
+					<a href="tel:+380962906362" class="phone-number">+38 (096) 290-63-62</a>
+					<button id="menu-btn" class="menu-toggle">
+							<span class="dash"></span>
+							<span class="dash"></span>
+							<span class="dash"></span>
+					</button>
+				</div>
+			</div>
+			<nav style="display: none">
+				<ul>
+					<li><a href="#a-main">Главная</a></li>
+					<li><a href="#a-main-slider">Фотографии</a></li>
+					<li><a href="#a-filter">Планировки</a></li>
+					<li><a href="#a-content-slider">Инфраструктура</a></li>
+					<li><a href="#a-docs">Документы</a></li>
+					<li><a href="#a-footer-map">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="navbar-scroll">
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#a-main">Главная</a></li>
+						<li><a href="#a-main-slider">Фотографии</a></li>
+						<li><a href="#a-filter">Планировки</a></li>
+						<li><a href="#a-content-slider">Инфраструктура</a></li>
+						<li><a href="#a-docs">Документы</a></li>
+						<li><a href="#a-footer-map">Контакты</a></li>
+						<li><a data-fancybox data-src="#modal-call" href="javascript:;" class="button"><span class="animation-btn"></span><span class="js__btn-content" data-tell="+38 (096) 290-63-62">+38 (096) 290-63-62</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+					</div>
+					<div class="col-md-5 mob-nav">
+						<nav>
+							<ul>
+								<li><a href="#a-main">Главная</a></li>
+								<li><a href="#a-main-slider">Фотографии</a></li>
+								<li><a href="#a-filter">Планировки</a></li>
+								<li><a href="#a-content-slider">Инфраструктура</a></li>
+								<li><a href="#a-docs">Документы</a></li>
+								<li><a href="#a-footer-map">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3">
+						<div class="navbar__contact">
+							<p>Горячая линия:</p>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="phone-number">+38 (096) 290-63-62</a>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar__bottom-line">
+			<div class="container">
+				<p>ЖК "КАССИОПЕЯ" Днепровский район</p>
+			</div>
+		</div>
+
+	</header>
+	
+
+	<section id="a-main" class="main" style="background-image: url(img/main.jpg);">
+		
+		<div class="fluid-block">
+			<h1>Жилой комплекс «КАССИОПЕЯ» в Киеве</h1>
+			<p>Апартаменты площадью от 30.72 м² по цене от 735 406 гривен</p>
+			<a data-fancybox data-src="#modal-download" href="javascript:;" class="button"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a>
+		</div>
+
+	</section>
+
+	<div class="main-slider" id="a-main-slider">
+		<div class="main-slider__map">
+			<div id="map"></div>
+
+		</div>
+		<div class="main-slider__btn">
+			<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="main-slider__button"><span class="animation-btn"></span><span class="icon-edit"></span>Записаться на просмотр</a>
+		</div>
+		<div class="main-slider__slider">
+			<div class="owl-carousel main-owl">
+				
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1.jpg)"><a href="img/main-owl/1.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/2.jpg)"><a href="img/main-owl/2.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/3.jpg)"><a href="img/main-owl/3.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/4.jpg)"><a href="img/main-owl/4.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/5.jpg)"><a href="img/main-owl/5.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/6.jpg)"><a href="img/main-owl/6.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/7.jpg)"><a href="img/main-owl/7.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/8.jpg)"><a href="img/main-owl/8.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/9.jpg)"><a href="img/main-owl/9.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/10.jpg)"><a href="img/main-owl/10.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<section class="section filter" id="a-filter">
+		
+		<div class="container">
+			<div class="section-title">
+				<h2>Планировки и цены на апартаменты ЖК «КАССИОПЕЯ»</h2>
+				<p>Вы можете выбрать, забронировать и купить апартаменты<br>в жилом комплексе «КАССИОПЕЯ» в нашем разделе с планировками и ценами</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="filter-calc">
+						<div class="filter-calc__count-rooms">
+							<p>Количество комнат:</p>
+						</div>
+						<div class="filter-calc__sqs">
+							<p>Метраж м²:</p>
+							<div class="filter-calc__sq" data-sq-min="30" data-sq-max="56">30-56</div>
+							<div class="filter-calc__sq" data-sq-min="40" data-sq-max="74">40-74</div>
+							<div class="filter-calc__sq" data-sq-min="60" data-sq-max="95">60-95</div>
+							<div class="filter-calc__sq" data-sq-min="85" data-sq-max="127">85-127</div>
+							<div class="filter-calc__sq" data-sq-min="120" data-sq-max="9999">120+</div>
+						</div>
+						<div class="filter-calc__slider">
+							<p>Цена, тыс грн:</p>
+							<div id="slider-range"></div>
+							<div class="pips"></div>
+						</div>
+						<div class="filter-calc__count">
+							<p>Выбрано <span class="count-curennt">13</span> из <span class="count-all">13</span></p>
+						</div>
+						<div class="filter-calc__btn hidden-xs">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="filter-content scrollbar-inner">
+
+						<script>
+							var FILT =	[
+							['sort:-комнатные апартаменты','room:1', 'sq:30.72', 'price:735406', 'src:img/filter/1/30.72кв.м. 23939грн. 735406грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:34.28', 'price:820629', 'src:img/filter/1/34.28кв.м. 23939грн. 820629грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:43.35', 'price:1152000', 'src:img/filter/1/43.35кв.м. 26575грн. 1152000грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:43.55', 'price:1005956', 'src:img/filter/1/43.55кв.м. 23099грн. 1005956грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:44.31', 'price:1177538', 'src:img/filter/1/44.31кв.м. 26575грн. 1177538грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:44.51', 'price:1137186', 'src:img/filter/1/44.51кв.м. 25549грн. 1137186грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:46.08', 'price:1224576', 'src:img/filter/1/46.08кв.м. 26575грн. 1224576грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:48.07', 'price:1228140', 'src:img/filter/1/48.07кв.м. 25549грн. 1228140грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:49.35', 'price:1260843', 'src:img/filter/1/49.35кв.м. 25549грн. 1260843грн..jpg', 'sold:true'],
+
+							['sort:-комнатные апартаменты','room:2', 'sq:64.35', 'price:1612000', 'src:img/filter/2/64.35 кв.м. 25050грн. 1612000грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:2', 'sq:67', 'price:2176000', 'src:img/filter/2/67кв.м. 32478грн. 2176000грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:69.48', 'price:1971200', 'src:img/filter/2/69.48кв.м. 28371грн. 1971200грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:2', 'sq:69.65', 'price:1792000', 'src:img/filter/2/69.65кв.м. 25738грн. 1792000грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:73.38', 'price:1664000', 'src:img/filter/2/73.38кв.м. 22677грн. 1664000грн..png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:77.65', 'price:2508800', 'src:img/filter/2/77.65кв.м. 32309грн. 2508800грн..jpg', 'sold:false'],
+
+							['sort:-комнатные апартаменты','room:3', 'sq:88.95', 'price:1961252', 'src:img/filter/3/88.95кв.м. 22049грн. 1961252грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:3', 'sq:89.07', 'price:1963898', 'src:img/filter/3/89.07кв.м. 22049грн. 1963898грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:90.73', 'price:2000499', 'src:img/filter/3/90.73кв.м. 22049грн. 2000499грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:92.21', 'price:3071977', 'src:img/filter/3/92.21кв.м. 33315грн. 3071977грн..jpg', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:96.88', 'price:2422000', 'src:img/filter/3/96.88кв.м. 25000грн. 2422000грн..jpg', 'sold:true'],
+							['sort:-комнатные апартаменты','room:3', 'sq:121.45', 'price:2990000', 'src:img/filter/3/121.45кв.м. 24620грн. 2990000грн..png', 'sold:false'],
+
+							['sort:<br>апартаменты','room:4', 'sq:126.82', 'price:3297320', 'src:img/filter/4/126.82кв.м. 26000грн. 3297320грн..jpg', 'sold:true'],
+							['sort:<br>апартаменты','room:4', 'sq:137.74', 'price:4325000', 'src:img/filter/4/137.74кв.м. 31596грн. 4325000грн..jpg', 'sold:false'],
+							['sort:<br>апартаменты','room:4', 'sq:141.14', 'price:3669640', 'src:img/filter/4/141.14кв.м. 26000грн. 3669640грн..jpg', 'sold:true'],
+							['sort:<br>апартаменты','room:4', 'sq:179.29', 'price:5120000', 'src:img/filter/4/179.29кв.м. 28557грн. 5120000тыс..jpg', 'sold:false'],
+							['sort:<br>апартаменты','room:4', 'sq:179.85', 'price:4676100', 'src:img/filter/4/179.85кв.м. 26000грн. 4676100грн..jpg', 'sold:true'],
+							['sort:<br>апартаменты','room:4', 'sq:182.03', 'price:4732780', 'src:img/filter/4/182.03кв.м. 26000грн. 4732780грн..jpg', 'sold:true'],
+							['sort:<br>апартаменты','room:4', 'sq:205.81', 'price:5351060', 'src:img/filter/4/205.81кв.м. 26000грн. 5351060грн..jpg', 'sold:true'],
+							
+
+							]
+						</script>
+
+
+					</div>
+
+					<div class="filter-calc__btn mobile hidden-lg hidden-md hidden-sm">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</section>
+
+
+
+
+	<section class="section presentation bg">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Презентация ЖК «КАССИОПЕЯ»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a data-fancybox data-src="#modal-download" href="javascript:;"><img src="img/book.png" alt="" class="img-responsive"></a>
+			</div>
+			<div class="center"><a data-fancybox data-src="#modal-download" href="javascript:;" class="button button--section"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a></div>
+		</div>
+
+	</section>
+
+
+	<section class="section content-slider" id="a-content-slider">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Инфраструктура ЖК «КАССИОПЕЯ»</h2>
+				<p>Застройщик комплекса «ТМК-блок» и группа компаний АРКАДА спроектировали инфраструктуру<br> ЖК «КАССИОПЕЯ» так, чтобы обеспечить комфорт и только положительные отзывы</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="owl-carousel content-owl1">
+			
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>Панорама ДНЕПРА и ПЕЧЕРСКИХ ХОЛМОВ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/2.jpg);"><p>Международный выставочный центр</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>Супермаркет NOVUS</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/4.jpg);"><p>Подзменый паркинг</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>ТРЦ KOMOD</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>Левобережный ПОЧТАМТ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>Театр ДРАМЫ и КОМЕДИИ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/8.jpg);"><p>Собо́р Воскресе́ния Христо́ва</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/9.jpg);"><p>Сквер ЗОНА ЗДОРОВЬЯ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/10.jpg);"><p>Обустроенный ПЛЯЖ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/11.jpg);"><p>Европейская НАБЕРЕЖНАЯ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/12.jpg);"><p>ЯХТ-клуб</p></div></div>
+			
+			
+		</div>
+
+		<div class="owl-carousel content-owl2">
+			
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>Панорама ДНЕПРА и ПЕЧЕРСКИХ ХОЛМОВ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/2.jpg);"><p>Международный выставочный центр</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>Супермаркет NOVUS</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/4.jpg);"><p>Подзменый паркинг</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>ТРЦ KOMOD</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>Левобережный ПОЧТАМТ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>Театр ДРАМЫ и КОМЕДИИ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/8.jpg);"><p>Собо́р Воскресе́ния Христо́ва</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/9.jpg);"><p>Сквер ЗОНА ЗДОРОВЬЯ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/10.jpg);"><p>Обустроенный ПЛЯЖ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/11.jpg);"><p>Европейская НАБЕРЕЖНАЯ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/12.jpg);"><p>ЯХТ-клуб</p></div></div>
+
+		</div>
+
+	</section>
+
+
+	<section class="section video">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Видео про ЖК «КАССИОПЕЯ»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="video__youtube-container">
+				<iframe width="710" height="400" src="https://www.youtube.com/embed/7-TTJWGDwAQ" frameborder="0" allowfullscreen="" style=""></iframe>
+				<img src="img/video-bg.png" alt="" class="img-responsive hidden-xs">
+			</div>	
+		</div>
+
+	</section>
+
+
+	<section class="section s-etap" id="etap">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Ход строительства ЖК «КАССИОПЕЯ»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="etap">
+				<div class="progress-etap" data-start="Tue Jun 01 2016" data-end="Wed Nov 01 2017"></div>	
+			</div>
+
+			<div class="etap__image">
+				<div class="item"><a href="img/etap-image/1.jpg" data-fancybox="gallery2"><img src="img/etap-image/1.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/2.jpg" data-fancybox="gallery2"><img src="img/etap-image/2.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/3.jpg" data-fancybox="gallery2"><img src="img/etap-image/3.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/4.jpg" data-fancybox="gallery2"><img src="img/etap-image/4.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/5.jpg" data-fancybox="gallery2"><img src="img/etap-image/5.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/6.jpg" data-fancybox="gallery2"><img src="img/etap-image/6.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/7.jpg" data-fancybox="gallery2"><img src="img/etap-image/7.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><p>1 секция – введена в эксплуатацию, присвоен почтовый адрес.<br>
+2 секция - введена в эксплуатацию, присвоен почтовый адрес.<br>
+3 секция – 4 квартал 2017 года.<br>
+4 секция – 2 квартал 2018 года.</p></div>
+			</div>
+		</div>
+		<!-- <div class="hidden">
+			<a href="img/etap-image/июнь 2016_2.JPG" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/март 2017_2.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/март 2017_3.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/18.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/20.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/22.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/24.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/25.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/28.jpg" data-fancybox="gallery2"></a>
+			<a href="img/etap-image/36.jpg" data-fancybox="gallery2"></a>
+		</div> -->
+	</section>
+
+	<section class="section rostr">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Рассрочка от застройщика ЖК «КАССИОПЕЯ»</h2>
+				<p>Застройщик комплекса «КАССИОПЕЯ» предлагает оформить рассрочку</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="center">
+				<div class="fact">до<span>1</span>года<p>Срок погашения</p></div>
+				<div class="fact"><span>35</span>%<p>Первоначальный взнос</p></div>
+				<div class="fact"><span>0</span>%<p>Переплат</p></div>
+			</div>
+
+			<div class="center"><a data-fancybox data-src="#modal-form2" href="javascript:;" class="button button--section"><span class="animation-btn"></span>Воспользоваться рассрочкой</a></div>
+
+		</div>
+
+	</section>
+
+
+	<section class="section docs bg" id="a-docs">
+		<div class="container">
+			<div class="section-title">
+				<h2>Документы и сертификаты ЖК «КАССИОПЕЯ»</h2>
+				<p>Документы о введении в эксплуатацию и присвоении почтового адреса</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="docs-wrap center">
+				<div class="docs__item">
+					<a href="img/sert/1.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/3.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Распоряжение о присвоении почтового адреса</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/2.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section footer-map bg" id="a-footer-map">
+		<div class="container">
+			<div class="section-title">
+				<h2>Карта расположения ЖК «КАССИОПЕЯ»</h2>
+				<p>ЖК «КАССИОПЕЯ» расположен по адресу: г. Киев, улица Панельная 7<br> Запишитесь на экскурсию через наш сайт</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div id="map2"></div>
+		<div class="container">
+			<div class="center">
+				<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="button"><span class="animation-btn"></span>Записаться на экскурсию на объект</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="navbar__contact">
+						<p>Горячая линия:</p>
+						<a href="tel:+380962906362" class="phone-number">+38 (096) 290-63-62</a>
+						<a  data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="prefooter-p">Брокер проекта — компания КиевДомСервис. Вся представленная информация на сайте не является публичной офертой.</p>
+			<p class="prefooter-p">Брокер проекта - Компания КиевДомСервис</p>
+		</div>
+
+		<div class="footer-bottom-line">
+			<div class="container">
+				<div class="fbl__flex">
+					<a href="#">Апартаменты в жилом комплексе  «КАССИОПЕЯ»</a>
+					<a href="#">Сайт жилого комплекса «КАССИОПЕЯ»</a>
+					<a href="http://www.KDService.com.ua">Сайт брокера проекта КиевДомСервис</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- modal start -->
+
+	<div style="display: none;" id="modal-download">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__book">
+						<img src="img/book.png" alt="book" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Скачайте презентацию <br>
+							комплекса в 1 клик</h2>
+							<p>Укажите свои контакты и мгновенно  <br>получите презентацию с ценами <br> и планировками в формате PDF</p>
+							<input type="hidden" name="type" value="презентация">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Скачать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;" id="modal-form">
+			
+					<form action="" class="form form-download">
+						<h2>Запросить все планировки</h2>
+							<p>Оставьте заявку на получение всех планировок жилого комплекса</p>
+
+							<input type="hidden" name="">
+
+							<input type="hidden" name="type" value="Запросить все планировки">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+		<div style="display: none;" id="modal-form2">
+			
+					<form action="" class="form form-download">
+						<h2>Рассрочка от застройщика</h2>
+							<p>Укажите свои контактные данные для получения информации по рассрочке</p>
+							<input type="hidden" name="type" value="Рассрочка от застройщика">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+	<div style="display: none;" id="modal-enroll">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__image" style="background-image: url(img/enroll.jpg)"></div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Запишитесь на экскурсию комплекса «КАССИОПЕЯ»</h2>
+							<p>Укажите свои контакты, менеджер<br> свяжется с вами для уточнения<br> удобного времени экскурсии</p>
+							<input type="hidden" name="type" value="экскурсия">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	<div style="display: none;" id="modal-call">
+		<div class="modal-flex">
+			<div class="modal-col">
+
+				<div class="myslider">
+					<div class="" style="display: block; left: 50%; margin-left: -95px; top: 0px; opacity: 1; height: 190px; width: 190px; z-index: 2;">
+						<img src="img/expert/4.jpg" alt="">
+						<div class="myname">Владимир <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: -170px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/3.jpg" alt="">
+						<div class="myname" style="display: block;">Анна <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: 40px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/1.jpg" alt="">
+						<div class="myname">Ярослав <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="opacity: 0;">
+						<img src="img/expert/2.jpg" alt="">
+						<div class="myname">Артём <span>Ведущий эксперт</span></div>
+					</div>
+				</div>
+
+				<div class="myarrows">
+					<div class="myleft"></div>
+					<div class="myright"></div> 
+				</div>
+
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-call">
+						<h2>Закажите звонок эксперта «КАССИОПЕЯ»</h2>
+							<p>Выбранный менеджер свяжется с вами <br>в первую же свободную минуту.</p>
+							<input type="hidden" name="type" value="звонок эксперта">
+							<div class="div_like_inp" id="selectcall">
+								<ul class="menu__ selectlink">
+									<span>Позвоните мне</span>
+									<span class="iic arr_down"></span>
+									<li><a href="#" class="cur_val">в ближайшее время</a>
+										<ul class="submenu">
+											<li class="v_bl" style="display:none;"><a href="#">в ближайшее время</a></li>
+											<li><a href="#">с 10:00 до 12:00</a></li>
+											<li><a href="#">с 12:00 до 14:00</a></li>
+											<li><a href="#">с 14:00 до 16:00</a></li>
+											<li><a href="#">с 16:00 до 18:00</a></li>
+											<li><a href="#">с 18:00 до 20:00</a></li>
+											<li><a href="#">завтра</a></li>
+										</ul>
+									</li>
+								</ul>
+								<input type="hidden" name="whencall" value="в ближайшее время">
+								<input type="hidden" name="whocall">
+							</div>
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div style="display: none;" id="modal-item">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-item__image">
+						<img src="img/filter/1.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-plan">
+						<p class="modal-item__rooms">1-комнатные апартаменты</p>
+						<p class="modal-item__sq">49.50 м²</p>
+						<p class="modal-item__sqm">Цена за м²: 59 000 грн.</p>
+						<p class="modal-item__price">Стоимость:<span>~12 700 000 Р</span></p>
+						<input type="hidden" name="type" value="планировка">
+						<label for="modal-item-name">Имя</label>
+						<input type="text" name="name" placeholder="Имя" required="required" id="modal-item-name">
+						<label for="modal-item-phone">Телефон</label>
+						<input type="text" class="mask validate valid" required="required" id="modal-item-phone" name="phone" placeholder="+38(0__) ___-____" inputmode="verbatim" x-inputmode="verbatim">
+						<div class="modal-item-select">
+							<label for="selc">Забронировать на:</label>
+							<select name="reserv" id="selc">
+								<option value="3 дня">3 Дня</option>
+								<option value="7 дней">7 Дней</option>
+								<option value="30 дней">30 Дней</option>
+							</select>
+						</div>
+						<div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+
+						<input type="hidden" name="p_price">
+						<input type="hidden" name="p_sq">
+						<input type="hidden" name="p_rooms">
+						<button type="submit" class="button">Забронировать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: none;" id="modal-send">
+			<h5>Спасибо за заявку</h5>
+			<p>Наш менеджер скоро свяжется с вами.</p>
+		</div>
+
+		<div style="display: none;" id="modal-nosend">
+			<h5>Произошла ошибка</h5>
+			<p>попробуйте еще раз.</p>
+		</div>
+
+
+
+	<!-- modal end -->
+
+	<!-- include -->
+
+	<!-- google map -->
+	<script>
+		function initMap() {
+			var uluru = {lat: 50.458798, lng: 30.585836};
+			var zoom = 15;
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker2.png',
+				map: map
+			});
+			var map2 = new google.maps.Map(document.getElementById('map2'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker2 = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker2.png',
+				map: map2
+			});
+		}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM8FvH0zSAlNoe7zh0pJsFLs0ITRq931k&callback=initMap">
+</script>
+<!-- google map -->
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</body>
+</html>

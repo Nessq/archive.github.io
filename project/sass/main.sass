@@ -1,0 +1,653 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+//*::-webkit-input-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*:-moz-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*::-moz-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*:-ms-input-placeholder
+//	color: #666
+//	opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//	color: #666
+//body input:required:valid,
+//body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.slider2
+    position: relative
+section
+    padding: 80px 0
+.slider
+    background: url('../img/Section1.jpg') no-repeat
+    background-size: cover
+    .item
+        h3
+            font: bold 47px/55px 'Open Sans', sans serif
+            text-transform: uppercase
+            max-width: 400px
+            color: #fff
+        p
+            max-width: 500px
+            color: #e6e6e6
+            font: 400 16px/27px "Open Sans", sans serif
+            padding: 30px 0
+        a
+            text-transform: none
+            font: 500 16px/27px "Roboto", sans serif
+            padding: 15px 50px
+            display: inline-block
+.categoryItems
+    min-height: 200px
+    opacity: 0.7
+    transition: all 0.25s
+    div
+        filter: grayscale(100%)
+        transition: all 0.25s
+    h5
+        transition: all 0.25s
+    &:hover
+        opacity: 1
+        cursor: pointer
+        h5
+            color: $AC
+        div
+            filter: none
+    .categoryImage
+        width: 100%
+        height: 130px
+    .categoryImage1
+        background: url('../img/categoryItems/1.png') no-repeat
+        background-position: center
+    .categoryImage2
+        background: url('../img/categoryItems/2.png') no-repeat
+        background-position: center
+    .categoryImage3
+        background: url('../img/categoryItems/3h.png') no-repeat
+        background-position: center
+    .categoryImage4
+        background: url('../img/categoryItems/4.png') no-repeat
+        background-position: center
+    .categoryImage5
+        background: url('../img/categoryItems/5.png') no-repeat
+        background-position: center
+    .categoryImage6
+        background: url('../img/categoryItems/6.png') no-repeat
+        background-position: center
+.popItem
+    margin: 10px
+    border: 1px solid #ededed
+    padding: 9px
+    text-align: center
+    height: 352px
+    transition: all 0.25s
+    &:hover
+        box-shadow: 4px -2px 28px 1px #ebebeb
+    &:hover > i
+        background-color: $AC
+    h6
+        text-align: left
+.imageItem
+    height: 150px
+.popTrade
+    font: 400 13px/21px 'Open Sans', sans serif
+    color: #fff
+    text-align: right
+    margin-bottom: 40px
+    span
+        display: inline-block
+        padding: 5px 15px
+        border-radius: 15px
+        margin: 3px 3px 0 0
+.priceAndCart
+    text-align: left
+    font: 500 18px/21px "Roboto", sans-serif
+    position: absolute
+    bottom: 25px
+    .price
+        display: inline-block
+        color: $AC
+        .price2
+            color: #848484
+            font-size: 10px
+            position: absolute
+            bottom: -15px
+            opacity: 0.5
+            i
+                color: #848484
+.popItem > i
+    display: inline-block
+    margin-top: -5px
+    padding: 8px 20px
+    background-color: #c9c9c9
+    border-radius: 15px
+    color: #fff
+    position: absolute
+    right: 37px
+    bottom: 20px
+    
+.specialOffers
+    .captionOffers
+        position: absolute
+        bottom: 20px
+        left: 20px
+        max-width: 310px
+        h3
+            font: 500 21px/30px 'Roboto', sans serif
+            color: #fff
+            margin: 0
+            text-transform: uppercase
+            span
+                color: #cfb20e
+        a
+            font: 600 11px/30px 'Open Sans', sans-serif
+            text-transform: uppercase
+            color: #c6c6c6
+    .offersItem
+        width: 100%
+        height: 285px
+        position: relative
+    .offersItem1
+        background: url('../img/offers/1.jpg') no-repeat
+        background-size: cover
+    .offersItem2
+        .captionOffers
+            h3
+                font-size: 14px
+                line-height: 19px
+                span
+                    color: #fa410f
+        .offersSmallItem
+            height: 136px
+            &:first-child
+                background: url('../img/offers/2.jpg') no-repeat
+                background-size: cover
+                margin-bottom: 13px
+            &:last-child
+                background: url('../img/offers/3.jpg') no-repeat
+                background-size: cover
+    .offersItem3
+        background: url('../img/offers/4.jpg') no-repeat
+        background-size: cover
+        .captionOffers h3
+            font-size: 16px
+            line-height: 25px
+.partner
+    padding-bottom: 0
+    text-align: center
+    a
+        opacity: 0.3
+        display: inline-block
+        height: 100px
+        transition: opacity 0.5s
+        &:hover
+            opacity: 1
+            img
+                filter: none
+        img
+            filter: grayscale(100%)
+    .carousel-control
+        top: 10px
+        z-index: 1000
+    .carousel-control.left
+        left: 0
+        right: auto
+    .carousel-control.right
+        right: 0
+.about
+    padding-top: 60px
+    padding-bottom: 20px
+    background: url('../img/sectionAbout.jpg') no-repeat
+    background-size: cover
+    h2, p
+        color: #fff
+footer
+    padding-top: 10px
+    .subLeft
+        p
+            font: 400 11px/18px 'Open Sans', sans-serif
+            color: #353535
+            display: inline-block
+        span
+            width: 44px
+            height: 44px
+            display: inline-block
+            background: url('../img/sub_icon.png') no-repeat
+            background-size: cover
+            position: relative
+            top: 10px
+            margin-right: 5px
+    #subForm
+        position: relative
+        top: 15px
+        font: 600 10px/18px "Open Sans", sans serif
+        ::placeholder
+            font: 300 italic 12px/30px "Roboto", sans serif
+        .input
+            font: 600 16px/18px "Open Sans", sans serif
+            width: 69%
+            border: 2px solid #e6e6e6
+            border-radius: 15px
+            height: 35px
+            padding-left: 15px
+            outline: none
+            &:focus
+                border: 2px solid #c9c9c9
+        .submit
+            background-color: $AC
+            width: 30%
+            position: relative
+            top: -3px
+            outline: none
+            border: 2px solid #e6e6e6
+            border-radius: 15px
+            height: 35px
+            border: none
+            color: #fff
+            opacity: 0.6
+            transition: opacity 0.5s
+            &:hover
+                opacity: 1
+                
+    .phone
+        position: relative
+        top: 10px
+        h4
+            font-size: 16px
+            line-height: 30px
+            color: #222222
+            display: inline-block
+
+        span
+            display: inline-block
+            background: url('../img/phone_icon.png') no-repeat
+            width: 33px
+            height: 23px
+        a
+            color: $AC
+            display: inline-block
+            transition: all 0.25s
+            opacity: 0.75
+            &:hover
+                opacity: 1
+    .listFooter
+        ul
+            display: inline-block
+            vertical-align: top
+            margin-right: 80px
+            &:last-child
+                margin-right: 0
+            a
+                color: #666
+                font: 400 12px/30px 'Open Sans', sans-serif
+                &:hover
+                    text-decoration: underline
+    .socialIcon
+        p
+            display: inline-block
+        a
+            padding: 10px
+            border-radius: 50%
+            display: inline-block
+            line-height: 1
+            opacity: 0.8
+            transition: opacity 0.35s
+            margin: 0 5px
+            &:hover
+                opacity: 1
+            i
+                color: #fff
+                font-size: 20px
+        .socialVk
+            background-color: #2d76a4
+        .socialYT
+            background-color: #e62117
+.paginationSection
+    ul
+        background-color: transparent
+        font: 11px/30px 'Roboto', sans serif
+        font-size: 100%
+        li a
+            color: $CT
+        .active
+            color: $AC
+    .breadcrumb>li+li:before
+        content: '>'
+        color: $CT
+        margin: 0 5px
+.tovar
+    .popItem
+        height: auto
+        box-shadow: 4px -2px 28px 1px #ebebeb
+    .youtubeLink
+        padding-left: 15px
+        line-height: 38px
+        display: inline-block
+        text-align: left
+        a:before
+            position: relative
+            z-index: 1
+            content: 'Перейти к просмотру видео на YouTube'
+            font-size: 13px
+            color: $CT
+    .imageItem
+        height: auto
+        img
+            display: inline-block
+    .carousel-indicators
+        bottom: auto
+        padding: 0
+        padding-top: 20px
+        margin-bottom: 0
+        margin: 0 auto
+        width: 100%
+        max-width: 414px
+        position: relative
+        left: 0
+        li
+            width: 70px
+            height: 50px
+            opacity: 0.6
+            transition: all 0.35s
+            z-index: 999
+            &:hover
+                opacity: 1
+    .carousel-indicators li.active
+        background-color: transparent
+        opacity: 1
+    .carousel-control.left
+        right: 25px
+    .carousel-control.right
+        top: 56px
+    .priceAndCart
+        font-size: 34px
+        top: 25px
+        bottom: auto
+        .price2
+            top: 40px
+            font-size: 15px
+            bottom: auto
+    .partnerTovar
+        text-align: right
+        img
+            display: inline-block
+    p
+        text-align: left
+        font: 500 13px/25px 'Roboto', sans serif
+        &:first-child
+            margin-top: 40px
+    .btnGroup
+        text-align: left
+        position: absolute
+        bottom: 30px
+        .stock
+            color: #fff
+            padding: 10px 20px
+            font: 500 13px/25px 'Roboto', sans serif
+            border-radius: 45px
+            &:first-child
+                margin-left: 5px
+            i
+                color: #fff
+                padding-right: 10px
+    .itemTextTovar
+        box-shadow: none
+        border: none
+    .countTovar
+        text-align: left
+        position: absolute
+        bottom: 70px
+        p
+            display: inline-block
+            text-align: left
+        .countContainer
+            width: 95px
+            height: 24px
+            background-color: #f6f6f6
+            display: inline-block
+            border-radius: 12px
+            position: relative
+            text-align: center
+            div
+                display: inline-block
+                background-color: #b7b7b7
+                width: 16px
+                height: 16px
+                line-height: 13px
+                border-radius: 50%
+                color: #fff
+                transition: all 0.25s
+                &:hover
+                    background-color: $AC
+                    cursor: pointer
+                &::selection
+                    background-color: transparent
+            span
+                tac
+            .countPlus
+                position: absolute
+                left: 5px
+                top: 4px
+            .countMinus
+                position: absolute
+                right: 5px
+                top: 4px
+.analog
+    .popItem > i
+        display: none
+    .popTrade
+        span
+            float: left
+    .priceAndCart
+        display: block
+        .price
+            display: block
+        .price2
+            bottom: auto
+            position: relative
+.cartSection
+    .container
+        .mFix > *
+            margin: 0 30px !important
+        border: 1px solid #f4f4f4
+        img
+            max-height: 100px
+            vertical-align: middle
+            display: inline-block
+        .headRow
+            h2
+                margin: 0
+                line-height: 100px
+            h5
+                display: inline-block
+                line-height: 100px
+                margin: 0 45px
+                &:last-child
+                    margin-right: 0
+        .tovCart
+            
+            p
+                margin-top: 30px
+                margin-bottom: 0
+                font: 500 13px/25px 'Roboto', sans serif
+                opacity: 0.5
+            h2
+                display: inline-block
+                margin: 0
+                font: 700 16px/25px 'Roboto', sans serif
+                letter-spacing: 0.6px
+                i
+                    color: $CT
+            .AC
+                color: $AC
+                
+                i
+                    color: $AC !important
+            .countTovar
+                display: inline-block
+                p
+                    display: none
+                    text-align: left
+                .countContainer
+                    width: 95px
+                    height: 24px
+                    background-color: #f6f6f6
+                    display: inline-block
+                    border-radius: 12px
+                    position: relative
+                    text-align: center
+                    div
+                        display: inline-block
+                        background-color: #b7b7b7
+                        width: 16px
+                        height: 16px
+                        line-height: 13px
+                        border-radius: 50%
+                        color: #fff
+                        transition: all 0.25s
+                        &:hover
+                            background-color: $AC
+                            cursor: pointer
+                        &::selection
+                            background-color: transparent
+                    span
+                        tac
+                    .countPlus
+                        position: absolute
+                        left: 5px
+                        top: 4px
+                    .countMinus
+                        position: absolute
+                        right: 5px
+                        top: 4px
+        .clearBin
+            width: 15px
+            height: 18px
+            background-image: url('../img/rubbish-bin.png')
+            position: absolute
+            top: 5px
+            right: 5px
+            margin: 0 !important
+            &:hover
+                cursor: pointer
+                background-image: url('../img/rubbish-binH.png')
+        .ItogSale
+            font-size: 16px
+            text-transform: none
+            line-height: 120px
+            margin: 0
+            text-align: right
+        .bottomRow
+            padding: 40px 0
+            ::placeholder
+                font: 300 italic 12px/30px "Roboto", sans serif
+        .form-control
+            border-radius: 0
+        .form-control:focus
+            border-color: $AC
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 92, 0, 0.6)
+        .submit
+            line-height: 35px
+            background-color: $AC
+            position: relative
+            outline: none
+            border: 2px solid #e6e6e6
+            border-radius: 15px
+            border: none
+            color: #fff
+            transition: opacity 0.5s
+            vertical-align: middle
+            padding: 0 30px
+            font: bold 13px/35px 'Roboto', sans serif
+        .lhFix
+            line-height: 80px
+            text-align: center
+.aboutFull
+    .about4
+        div
+            float: left
+            width: 25%
+    p
+        font: 500 14px/24px 'Roboto', sans-serif
+        margin: 10px 0
+    h5
+        text-align: left
+        font: 500 17px/24px 'Roboto', sans-serif
+        color: $CT
+        margin: 20px 0
+        text-transform: none
+    span
+        color: $AC
+        margin-right: 20px
+        margin-left: 10px
+    li
+        line-height: 28px
+    a
+        color: $AC
+        &:hover
+            text-decoration: underline
+.contact
+    .popItem
+        height: auto
+        &:hover
+            box-shadow: none
+        h6
+            text-transform: none
+            margin-left: 15px
+        p
+            font-weight: 400
+    .map
+        background: url('../img/contactMap.jpg') no-repeat
+        background-size: cover
+        min-height: 500px
+        .popItem
+            background-color: #fff
+            h5
+                text-align: left
+                margin-left: 15px
+            address
+                text-align: left
+                margin-left: 15px
+                p
+                    color: #777
+            p
+                color: $AC
+                font-weight: bold
+        .tellBlock
+            vertical-align: top
+            .tellBlock1
+                width: 49%
+                display: inline-block
+                h4
+                    margin: 0
+                    position: relative
+                    top: -18px
+                
+            .tellBlock2
+                width: 49%
+                display: inline-block
+                p
+                    color: #777
+                    font-size: 10px
+        a
+            color: #777
+            font: 500 14px/24px 'Roboto', sans-serif
+            &:hover
+                color: $AC
+                
+//ALWAYS END
+@import "media"

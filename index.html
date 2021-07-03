@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Adminka</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	
+	<!-- Template Basic Images Start -->
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<link rel="icon"  href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+
+<header>
+  <div class="logo"><a href="/">Universe</a></div>
+
+  <div class="header-nav">
+    <div class="icon-btn"><img src="img/icon-btn.svg" alt="" width="28"></div>
+    <div class="header-breadcrumbs">
+      
+        <a href="#" class="">Дашбоард</a>
+      
+    </div>
+
+
+  </div>
+
+
+  
+
+  
+  
+
+    <a href="myProfile.html" class="header-login"><img src="img/header-login-icon.svg" alt="" width="28"></a>
+  
+</header>
+
+
+
+
+
+<nav>
+  <ul data-active='1'>
+    <li><a href="/">Дашборд</a></li>
+    <li><a href="users.html">Пользователи</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="company-role.html">Компании и роли</a></li>
+    <li><a href="more.html">Дополнительные параметры</a></li>
+    <li><a href="settings.html">Настройки</a></li>
+    <li><a href="control.html">Контроль</a></li>
+  </ul>
+</nav>
+
+
+
+<div class="main">
+
+
+	<div class="content-index">
+
+		<div class="container-fluid">
+
+			<div class="sort">
+				<div class="sort__label">Показать за</div>
+				<div class="sort__link">
+					<a href="#">день</a>
+					<a href="#">неделю</a>
+					<a href="#" class="active">месяц</a>
+				</div>
+			</div>
+
+			<div class="dashboard">
+				<div class="row">
+					<div class="col-6">
+						<div class="item">
+							<div class="dashboard__reg">
+								<div class="count">1 568</div>
+								<div class="row justify-content-between">
+									<div class="col-auto">
+											<div class="text">Новые регистрации</div>
+									</div>
+									<div class="col-auto">
+											<div class="date">фев 2019</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="item">
+								<div class="dashboard__login">
+									<div class="count">5 678</div>
+									<div class="row justify-content-between">
+											<div class="col-auto">
+													<div class="text">Входы в приложение</div>
+											</div>
+											<div class="col-auto">
+													<div class="date">фев 2019</div>
+											</div>
+										</div>
+								</div>	
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="item">
+							<div class="dashboard__graf">
+								<div class="row justify-content-between align-items-center">
+									<div class="col-auto"><div class="text">Среднее время<br> на пользователя</div></div>
+									<div class="col-auto"><div class="count">1:30</div></div>
+								</div>
+								<div class="graf"><div class="dashboard-1"></div></div>
+
+								<script>
+									
+									window.addEventListener('load', function(){
+
+
+										var chart = new Chartist.Line('.dashboard-1', {
+											labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+											series: [
+												[
+													{label : '0:28', value : 0.28},
+													{label : '1:00', value : 1.00},
+													{label : '0:50', value : 0.50},
+													{label : '1:37', value : 1.37},
+													{label : '1:10', value : 1.10},
+													{label : '1:37', value : 1.37}
+												],
+											]
+										}, {
+											width: 380,
+											height: 200,
+											low: 0,
+											// high: 2,
+											// divisor: 4,
+											fullWidth: false,
+											chartPadding: {	right: 55,left: 0},
+											lineSmooth: false,
+											showGridBackground: false,
+											axisX:{
+												offset: 40,
+												position: 'end',
+												labelOffset: {x: -10,	y: 15},
+											},
+											axisY: {
+												offset: 55,
+												labelOffset: {x: -15,	y: 5},												
+												labelInterpolationFnc: function(value) {
+													return (''+value.toFixed(2)).replace(/[.]/g, ":")
+												}
+											},
+											plugins: [
+												ctPointLabels({	textAnchor: 'middle'})
+											]
+										});
+
+										chart.on('draw', function(data) {
+											if (data.type === 'point') {
+												var circle = new Chartist.Svg('circle', {
+													cx: [data.x],
+													cy: [data.y],
+													r: [4],
+													fill: ['#333'],
+													stroke: ['#fff'],
+													strokeWidth: ['1px']
+												}, 'ct-circle');
+												data.element.replace(circle);
+  									}});
+									})
+
+								</script>
+							</div>	
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="item">
+								<div class="dashboard__graf">
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto"><div class="text">Среднее колличество<br> сообщений на пользователя</div></div>
+										<div class="col-auto"><div class="count">32</div></div>
+									</div>
+									<div class="graf"><div class="dashboard-2"></div></div>
+									<script>
+									
+											window.addEventListener('load', function(){
+		
+		
+												var chart = new Chartist.Line('.dashboard-2', {
+													labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+													series: [
+														[
+															{label : '9', value : 9},
+															{label : '18', value : 18},
+															{label : '16', value : 16},
+															{label : '32', value : 32},
+															{label : '23', value : 23},
+															{label : '32', value : 32}
+														],
+													]
+												}, {
+													width: 380,
+													height: 200,
+													low: 0,
+													// high: 50,
+													divisor: 4,
+													fullWidth: false,
+													chartPadding: {	right: 55,left: 0},
+													lineSmooth: false,
+													showGridBackground: false,
+													axisX:{
+														offset: 40,
+														position: 'end',
+														labelOffset: {x: -10,	y: 15},
+													},
+													axisY: {
+														offset: 55,
+														labelOffset: {x: -15,	y: 5},												
+														labelInterpolationFnc: function(value) {
+															return (''+value.toFixed(0)).replace(/[.]/g, ":")
+														}
+													},
+													plugins: [
+														ctPointLabels({	textAnchor: 'middle'})
+													]
+												});
+		
+												chart.on('draw', function(data) {
+													if (data.type === 'point') {
+														var circle = new Chartist.Svg('circle', {
+															cx: [data.x],
+															cy: [data.y],
+															r: [4],
+															fill: ['#333'],
+															stroke: ['#fff'],
+															strokeWidth: ['1px']
+														}, 'ct-circle');
+														data.element.replace(circle);
+												}});
+											})
+		
+										</script>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
+
+<link rel="stylesheet" href="libs/chartist-js/dist/chartist.css">
+<script src="libs/chartist-js/dist/chartist.min.js"></script>
+
+<!-- <link rel="stylesheet" href="libs/selectize.js/dist/css/selectize.css"> -->
+<link rel="stylesheet" href="libs/selectize.js/dist/css/selectize.default.css">
+<script src="libs/selectize.js/dist/js/standalone/selectize.min.js"></script>
+
+
+<script src="js/scripts.min.js"></script>
+<script src="js/forms.js"></script>
+
+</body>
+</html>

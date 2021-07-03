@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Catalog page</title>
+    <!-- partial:parts/_head.html -->
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/tether/dist/js/tether.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="../bower_components/ion.rangeSlider/css/ion.rangeSlider.css">
+<link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../bower_components/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bower_components/jquery-autocompleter/jquery.autocompleter.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/jquery.fatNav.min.css">
+<link rel="stylesheet" href="css/main.css"/>
+
+    <!-- partial -->
+</head>
+<body class="front">
+<div id="wrapper">
+    <!-- partial:parts/_header.html -->
+    <header id="header">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-end">
+            <div class="header_main_menu_wrapper d-flex align-items-end">
+
+                <div class="fat-nav">
+
+                   <div class="fat-nav__wrapper navigation">
+                    <nav id="navigation" class="header_menu header_main_menu">
+                        <ul>
+                            <li><a href="catalog.html">Красное</a></li>
+                            <li><a href="#">Белое</a></li>
+                            <li><a href="#">Розовое</a></li>
+                            <li><a href="#">Игристые вина</a></li>
+                            <li><a href="#">Крепкий алкоголь</a></li>
+                            <li><a href="#">Вода и соки</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_second_menu header_menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Команда и вакансии</a></li>
+                            <li><a href="#">Сертификаты и награды</a></li>
+                            <li><a href="#">Гарантии и отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li class="space"><a href="#">Доставка / Оплата</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Корпоративным клиентам</a></li>
+                            <li class="space"><a href="wine-page.html">Мастер-классы</a></li>
+                            <li><a href="#">Дегустации</a></li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+                <form action="#" class="header_search_form">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="Например, Пти Шабли">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </form>
+            </div>
+            <div class="logo">
+                <a href="index.html" id="header_logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="header_info">
+                <ul class="d-flex justify-content-between align-items-end">
+                    <li><a href="#">link
+                    </a></li>
+                    <li><a href="#">link
+                    </a></li>
+                    <li><a href="#">link
+                    </a></li>
+                    <li><a href="#">link
+                    </a></li>
+                    <li class="basket-count"><a href="account.html"><span>5</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- partial -->
+    <div id="middle">
+        <div class="region region-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="front-image">
+                        <img src="images/content/slide-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="region region-middle bg-circle bg-full-right">
+            <div class="category-wine-wrapper bg-circle bg-left bg-full-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="category-wine">
+                                <ul class="d-flex justify-content-between flex-wrap">
+                                    <li><a href="#">к мясу</a></li>
+                                    <li><a href="#">к рыбе</a></li>
+                                    <li><a href="#">к птице</a></li>
+                                    <li><a href="#">к десертам</a></li>
+                                    <li><a href="#">новинки</a></li>
+                                    <li><a href="#">в подарок</a></li>
+                                    <li><a href="#">сомелье</a></li>
+                                    <li><a href="#">открой мир</a></li>
+                                    <li><a href="#">из пикника</a></li>
+                                    <li><a href="#">био</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-bg">
+                <div class="main bg-circle bg-full-left bg-full-rights">
+
+                    <div class="row">
+                        <aside class="left-sidebar col-md-4 col-lg-3">
+                            <div class="title">
+                                На любой
+                                вкус!
+                            </div>
+                            <a class="reset" href="#">сбросить все фильтры</a>
+                            <form action="#">
+                                <div class="filter-items">
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Стоимость
+
+                                        </div>
+                                        <select name="" id="1"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">До 750 ₽</option>
+                                            <option value="2">До 950 ₽</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Рейтинг
+                                        </div>
+                                        <select name="" id="2"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">5 звезд</option>
+                                            <option value="2">6 звезд</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Цвет
+                                        </div>
+                                        <select name="" id="3"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Красное</option>
+                                            <option value="2">Красное</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Сахар
+                                        </div>
+                                        <select name="" id="4"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Сухое</option>
+                                            <option value="2">Сухое</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Страна, регион
+                                        </div>
+                                        <select name="" id="5"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Италия, Тоскана</option>
+                                            <option value="2">Италия, Тоскана</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Акции
+                                        </div>
+                                        <select name="" id="6"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Выбрать</option>
+                                            <option value="2">Выбрать</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Виноград
+                                        </div>
+                                        <select name="" id="7"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Каберне Совиньон</option>
+                                            <option value="2">Каберне Совиньон</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Вкус
+                                        </div>
+                                        <select name="" id="8"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Фруктовый</option>
+                                            <option value="2">Фруктовый</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Бренд
+                                        </div>
+                                        <select name="" id="9"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Выбрать</option>
+                                            <option value="2">Выбрать</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Объемы
+                                        </div>
+                                        <select name="" id="11"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Все объемы</option>
+                                            <option value="2">Все объемы</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="label">
+                                            Подходит для
+                                        </div>
+                                        <select name="" id="12"
+                                                data-jcf='{"wrapNativeOnMobile": true, "wrapNative": false, "fakeDropInBody": false}'>
+                                            <option value="1">Все сочетания</option>
+                                            <option value="2">Все сочетания</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </aside>
+                        <div class="content col-md-8 col-lg-9">
+                            <div class="sort">
+                                <div class="label">Сортировать по</div>
+                                <ul>
+                                    <li><a class="active" href="#">Популярности</a></li>
+                                    <li><a href="#">цене</a></li>
+                                    <li><a href="#">рейтингу</a></li>
+                                </ul>
+                            </div>
+                            <div class="catalog-list d-lg-flex d-sm-flex flex-sm-wrap justify-content-sm-center justify-content-lg-between flex-lg-wrap">
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <div class="content-item bg-animate">
+                                    <a href="#" class="d-flex align-items-end">
+                                        <img class="bg-img" src="images/content/content-1.png" alt="">
+                                        <div class="title">
+                                            Пышные,
+                                            пикантные,
+                                            согревающие
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                                <!-- partial:parts/bottle-item.html -->
+                                <div class="bottle-item grid-item">
+    <a href="#">
+        <div class="bottle-item-top-info d-flex justify-content-between">
+            <span>Франция</span>
+            <span>6345</span>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="images/content/bottle-1.jpg" alt="">
+            </figure>
+            <div class="rating">
+                <img src="images/stars-icon.png" alt="">
+                <span>4,5</span>
+            </div>
+            <div class="title">Jamais Renoncer 2016</div>
+            <div class="description">
+                Красное, полусладкое
+            </div>
+            <div class="wrapp-price">
+                <div class="price">
+                    7 999 ₽
+                </div>
+                <div class="old-price">
+                    7 999 ₽
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                <!-- partial -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-circle bg-left-top">
+            <div class="container vine-magazine">
+                <div class="row justify-content-around">
+                    <div class="col-md-8 col-lg-6 text-center">
+                        <h2>Винный журнал</h2>
+                        <div class="description-text">Подпишитесь на наш винный e-mail журнал и получайте
+                            уникальные предложения, а также самые интересные
+                            винные статьи.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <form class="col-md-12 col-lg-8" action="#">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <input type="text" placeholder="Имя и фамилия">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <input class="btn" type="submit" value="Отправить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- partial:parts/_footer.html -->
+
+
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 footer-logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="col-md-6 col-sm-12 footer-menu d-flex justify-content-between flex-wrap">
+                <ul class="footer-menu-list ">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Команда и вакансии</a></li>
+
+                </ul>
+                <ul class="footer-menu-list">
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="footer-menu-list">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <p>
+                    <span>125 Long Avenue</span>
+                    <span>125 New York</span>
+                    <span>+ 1 123 234</span>
+                    <span><a class="mail" href="mailto:test@yandex.ru">test@yandex.ru</a></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center copy">
+                Copyright
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="../bower_components/jcf/dist/js/jcf.js"></script>
+<script src="../bower_components/jcf/dist/js/jcf.select.js"></script>
+<script src="../bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+<script src="../bower_components/jquery-autocompleter/jquery.autocompleter.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fatNav.js"></script>
+<script src="js/main.min.js"></script>
+<!-- partial -->
+</body>
+</html>

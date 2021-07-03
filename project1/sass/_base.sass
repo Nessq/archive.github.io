@@ -1,0 +1,71 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	font-size: 14px
+	color: #616161
+	opacity: 1
+	text-align: center
+
+*:-moz-placeholder
+	font-size: 14px
+	color: #616161
+	opacity: 1
+	text-align: center
+
+*::-moz-placeholder
+	font-size: 14px
+	color: #616161
+	opacity: 1
+	text-align: center
+
+*:-ms-input-placeholder
+	font-size: 14px
+	color: #616161
+	opacity: 1
+	text-align: center
+::-webkit-resizer
+	background-image: url("../img/resizer.png")
+	background-repeat: no-repeat
+.color-green
+	color: #76ff03
+.color-red
+	color: #ff8a65
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	font-style: normal
+.cont
+	max-width: 990px !important
+	margin: 0 auto
+	padding: 0 15px
+.btn
+	text-transform: uppercase
+	display: inline-block
+	color: #fff
+	padding: 12px 35px
+	border: 2px solid #fff
+	border-radius: 5px
+	font-size: 15px
+	font-weight: 700
+	transition: all 0.25s
+	&:hover
+		background-color: #FFF
+		color: $d
+		text-decoration: none
+.center
+	margin-top: 140px
+	h3
+		height: 60px
+		margin-bottom: 65px !important

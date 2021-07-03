@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+
+<body>
+
+
+	<div class="modal-login" style="display: none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5">
+					<div class="modal-login-form" style='display: none;'>
+						<p>Личный кабинет</p>
+						<form action="">
+							<input type="text" placeholder="Введите логин">
+							<input type="password" placeholder="Введите пароль">
+
+							<input type="checkbox" id="c1">
+							<label for="c1" class="modal-checkbox"><span></span>Запомнить меня</label>
+							<button class="button">Войти в кабинет</button>
+						</form>
+						<img src="img/modal-icon.png" alt=""><a href="#">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="header-logo">
+						<a href="/"><img src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<nav class="header-nav">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</nav>
+					<nav class="header-mobile-nav">
+						<div class="menu-burger">
+							<span class="burger-top"></span>
+							<span class="burger-center"></span>
+							<span class="burger-bottom"></span>
+						</div>
+						<ul style="display: none;">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#modal-login" class="burger-hide">Вход</a></li>
+							<li><a href="#">Регистрация</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-sm-3 hidden-xs">
+					<div class="header-button">
+						<a href="#modal-login">Вход</a>
+						<a href="#" class="button">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="posf"></div>
+	
+	<section class="section-search section-search2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="pre-search"><span>Поиск автозапчасти по коду</span><a href="#">VIN запрос</a></div>
+					<form action="#" class="search-form">
+						<input type="text" placeholder="">
+						<button><img src="img/search-loopa.png" alt=""></button>
+					</form>
+				</div>
+			</div>
+			<div class="row search-nav">
+				
+				
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-1s.png" alt=""></span>Запчасти</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-2s.png" alt=""></span>Шины</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-3s.png" alt=""></span>Масла</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-4s.png" alt=""></span>Аксессуары</a></div>
+				</div>
+				<div class="col-sm-offset-0 col-sm-2 col-xs-offset-3 col-xs-6">
+					<div><a href="#"><span><img src="img/category-5s.png" alt=""></span>Запчасти ТО</a></div>
+				</div>
+			</div>
+
+			
+		</div>
+	</section>
+	
+	<section class="section-vin form-style">
+		<form action="#">
+
+			<div class="new-vin">
+				<div class="container">
+					<h3>Новый VIN-запрос</h3>
+					<div class="row">
+						<div class="col-sm-3"><label for="vin-code">VIN-код / № кузова</label></div>
+						<div class="col-sm-9"><input type="text" id="vin-code"></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-year">Год</label>
+						</div>
+						<div class="col-sm-3">
+							<select id="vin-year">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-month">Месяц</label>
+						</div>
+						<div class="col-sm-3">
+							<select id="vin-month">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-mark">Марка</label>
+						</div>
+						<div class="col-sm-3">
+							<select id="vin-mark">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-model">Модель</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-model">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-lc">Мощность, л.с.</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-lc">
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-cm3">Объем двигателя, см3</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-cm3">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-info">Информация</label>
+						</div>
+						<div class="col-sm-9">
+							<textarea name="" id="vin-info" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="vin-podrobno">
+				<div class="container">
+					<a href="#" class="vin-show">Подробные сведения</a>
+				</div>
+				<div class="container vin-hide">
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-podrobno-1">Цилиндров</label>
+						</div>
+						<div class="col-sm-3">
+							<select name="" id="vin-podrobno-1"></select>
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-podrobno-2">Тип кузова</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-podrobno-2">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-podrobno-3">Тип/буквы двигателя</label>
+						</div>
+						<div class="col-sm-3">
+							<select name="" id="vin-podrobno-3"></select>
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-podrobno-4">Тип кпп</label>
+						</div>
+						<div class="col-sm-3">
+							<select name="" id="vin-podrobno-4"></select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-podrobno-5">Клапанов</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-podrobno-5">
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-podrobno-6">Число дверей</label>
+						</div>
+						<div class="col-sm-3">
+							<select name="" id="vin-podrobno-6"></select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="vin-podrobno-7">Привод</label>
+						</div>
+						<div class="col-sm-3">
+							<select name="" id="vin-podrobno-7"></select>
+						</div>
+						<div class="col-sm-3">
+							<label for="vin-podrobno-8">Номер кпп</label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" id="vin-podrobno-8">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="">Руль</label>
+						</div>
+						<div class="col-sm-9">
+							<input type="radio" name="vin-radio" id="vin-r1" checked>
+							<label for="vin-r1" class="label-radio"><span></span>Слева</label>
+							<input type="radio" name="vin-radio" id="vin-r2">
+							<label for="vin-r2" class="label-radio"><span></span>Справа</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label for="">Опции комплектации</label>
+						</div>
+						<div class="col-sm-9">
+							<input type="checkbox" name="vin-checkbox-1" id="vin-c1">
+							<label for="vin-c1" class="label-checkbox"><span></span>ABS</label>
+							<input type="checkbox" name="vin-checkbox-2" id="vin-c2">
+							<label for="vin-c2" class="label-checkbox"><span></span>ESP</label>
+							<input type="checkbox" name="vin-checkbox-3" id="vin-c3">
+							<label for="vin-c3" class="label-checkbox"><span></span>УР</label>
+							<input type="checkbox" name="vin-checkbox-4" id="vin-c4">
+							<label for="vin-c4" class="label-checkbox"><span></span>Кондиционер</label>
+							<input type="checkbox" name="vin-checkbox-5" id="vin-c5">
+							<label for="vin-c5" class="label-checkbox"><span></span>Катализатор</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="vin-section-table hidden-xs">
+				<div class="container">
+					<h4>Названия и описания требуемых запчастей</h4>
+					<p>Заполните в данной таблице известную информацию о требующихся запчастях. Для добавления строк используйте кнопку добавить строку 
+						в конце таблицы. Для удаления - кнопку удалить строку в соответствующей строке.</p>
+						<table>
+							<thead>
+								<tr>
+									<td></td>
+									<td>Наименование</td>
+									<td>Артикул</td>
+									<td>Количество</td>
+									<td>Примечание</td>
+								</tr>
+							</thead>
+							<tbody class="vin-table-forms">
+								<tr style="display: none" class="vin-table-copy">
+									<td><a href="#" title="закрыть" class="vin-table-close">+</a></td>
+									<td><input type="text" name="table-name[]"></td>
+									<td><input type="text" name="table-article[]"></td>
+									<td><input type="text" name="table-count[]"></td>
+									<td><input type="text" name="table-note[]"></td>
+								</tr>
+								<tr>
+									<td><a href="#" title="закрыть" class="vin-table-close">+</a></td>
+									<td><input type="text" name="table-name[]"></td>
+									<td><input type="text" name="table-article[]"></td>
+									<td><input type="text" name="table-count[]"></td>
+									<td><input type="text" name="table-note[]"></td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td><a href="#" title="добавить" class="vin-table-add">+</a></td>
+									<td><a href="#" class="vin-table-add2">Добавить строку</a></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="vin-register">
+					<div class="container">
+						<h4>Я регистрируюсь как</h4>
+						<div class="row">
+							<div class="col-sm-9">
+								<input type="radio" name="vin-radio2" id="vin-rr1">
+								<label for="vin-rr1" class="label-radio"><span></span>Организация</label>
+								<input type="radio" name="vin-radio2" id="vin-rr2" checked>
+								<label for="vin-rr2" class="label-radio"><span></span>Частное лицо</label>
+								<input type="text" name="organization" placeholder="название организации" style="display: none;">
+							</div>
+						</div>
+						<h4>Введите свои контактные данные</h4>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="register-obl">Область</label>
+							</div>
+							<div class="col-sm-6">
+								<select id="register-obl">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="register-gorod">Город</label>
+							</div>
+							<div class="col-sm-6">
+								<select id="register-gorod">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="register-family">Фамилия</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="register-family">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="register-name">Имя</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="register-name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="register-otchestvo">Отчество</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="register-otchestvo">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="">Контактный телефон, Факс</label>
+							</div>
+							<div class="col-sm-3">
+								<input type="text" id="register-phone">
+							</div>
+							<div class="col-sm-3">
+								<input type="text" id="register-fax">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="">Сотовый телефон</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="register-mobile-phone">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="">E-mail</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="register-email">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="">ICQ, Skype</label>
+							</div>
+							<div class="col-sm-3">
+								<input type="text" id="register-icq">
+							</div>
+							<div class="col-sm-3">
+								<input type="text" id="register-skype">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">
+								<label for="">Введите код на изображении</label>
+							</div>
+							<div class="col-sm-3">
+								<input type="text" id="register-capcha">
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-offset-3 col-md-3 col-sm-9">
+								<button class="button">Подать запрос</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="footer-logo">
+							<img src="img/footer-logo.jpg" alt="">
+							<p>Интернет-магазин по продажам
+								оригинальных и неоригинальных
+								запчастей.</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer-list">
+								<ul>
+									<li><a href="#">Гарантия и возврат</a></li>
+									<li><a href="#">Как сделать заказ</a></li>
+									<li><a href="#">Оплата товара</a></li>
+									<li><a href="#">Доставка товара</a></li>
+									<li><a href="#">Акции магазина</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer-contact">
+								<div class="footer-address">
+									<img src="img/footer-location.png" alt="">
+									<p>Астана улица Бейсековой 3 ТД "Астыкжан".</p>
+								</div>
+								<div class="footer-tell">
+									<img src="img/footer-phone.png" alt="">
+									<p>+7 (701) 6102737</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer-copy">
+								<p>© 2017 Fara.kz. Все права защищены.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<link rel="stylesheet" href="css/main.min.css">
+			<script src="js/scripts.min.js"></script>
+		</body>
+		</html>

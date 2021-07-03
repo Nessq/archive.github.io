@@ -1,0 +1,112 @@
+@keyframes stol
+	from
+		transform: scale(1)
+	to
+		transform: scale(1.5) //СТОЛ МАСШТАБ 1 = 100% 1.5 = 150%
+@keyframes coll
+	from
+		transform: scale(1)
+	to
+		transform: scale(1.6) //СТОЛБЫ МАСШТАБ 1 = 100% 1.6 = 160%
+@keyframes fon
+	from
+		transform: scale(1)
+	to
+		transform: scale(1.4) //ФОН МАСШТАБ 1 = 100% 1.4 = 140%
+@keyframes light
+	from
+		transform: rotateZ(0)
+	to
+		transform: rotateZ(-90deg) // ПОВОРОТ ЛИНЗЫ 90deg = 90 градусов
+@keyframes shum
+	from
+		background-position: right 100% // ШУМ начальное значение
+	to
+		background-position: left 100% // ШУМ в сторону left
+@keyframes blur
+	from
+		background-position: left 100%  //блур начальное значение
+	to
+		background-position: right 100% //блур в сторону right
+	to
+body
+	padding: 0
+	margin: 0
+.parallax
+	overflow: hidden
+	position: relative
+	div
+		height: 100%
+	.content
+		position: absolute
+		z-index: 999
+		top: 0
+		left: 0
+	.fon
+		position: relative
+		background-image: url("img/fon.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		top: 0
+		left: 0
+		animation: fon 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+	div
+		position: absolute
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	.stol
+		background-image: url("img/stol.png")
+		animation: stol 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+	.col1
+		background-image: url("img/col1.png")
+		animation: coll 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+	.col2
+		background-image: url("img/col2.png")
+		animation: coll 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+	.top
+		background-image: url("img/top.png")
+		animation: stol 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+	.shum
+		background-image: url("img/shum.png")
+		animation: shum 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+		opacity: 0.07
+		background-size: 150%
+	.blur
+		background-image: url("img/blur.png")
+		animation: blur 10s infinite
+		animation-direction: alternate
+		animation-timing-function: linear
+		background-size: 150%
+		opacity: 0.55
+		
+	.light
+		background-image: url("img/light.png")
+		animation: light 10s infinite
+		transform-origin: 65% 45%
+		animation-direction: alternate
+		animation-timing-function: linear
+		background-size: cover
+		top: -27%
+		right: -30%
+@media screen and(max-width: 767px)
+	.parallax
+		.blur, .shum
+			background-size: cover

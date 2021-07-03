@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Создание сайтов</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	
+	<!-- font start -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic" rel="stylesheet">
+	<!-- font end -->
+	<link rel="stylesheet" href="css/main.min.css">
+	
+	<style>body{opacity: 0;}</style>
+</head>
+
+<body id="body">
+	
+	<header class="header">
+	<!-- mobile burger start -->
+		<button class="burger d-md-none">
+			<svg id="burger-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+				<title>Show / Hide Navigation</title>
+				<rect class="burger-svg__base" width="50" height="50" fill="transparent"/>
+				<g class="burger-svg__bars" fill="#fff">
+					<rect class="burger-svg__bar burger-svg__bar-1" x="14" y="18" width="22" height="2"/>
+					<rect class="burger-svg__bar burger-svg__bar-2" x="14" y="24" width="22" height="2"/>
+					<rect class="burger-svg__bar burger-svg__bar-3" x="14" y="30" width="22" height="2"/>
+				</g>
+			</svg>
+		</button>
+		<!-- mobile burger end -->
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-auto mr-md-auto col-5">
+					<div class="logo">Logo</div>
+				</div>
+				<div class="col-auto order-md-2 order-3 static">
+					<nav>
+						<ul>
+							<li><a href="#services">Услуги</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#price">Прайс</a></li>
+							<li><a href="#faq">Faq's</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-auto order-md-3 order-2">
+					<a class="header__number" href="tel:+38 (066) 327 79 35">+38 (066) 327 79 35</a>
+					<a href="#" data-modal=".modal-form" class="btn btn--purple d-lg-inline-block d-none">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section id="main">
+		<div class="layer main__bg"><div class="img"></div></div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="layer col-md-6">
+					<div class="main__text wow fadeIn" data-wow-duration="2s" data-wow-delay="600ms">
+						<h1>СОЗДАНИЕ КАЧЕСТВЕННЫХ САЙТОВ ЛЮБОЙ СЛОЖНОСТИ В КРАТЧАЙШИЕ СРОКИ</h1>
+						<p>Мы делаем не просто уникальный дизайн, а единую экосистему, которая выведет ваш бизнес, ваше дело на новый уровень. Вы можете прийти к нам с проектом любой сложности. Все ваши задачи и цели будут реализованы!</p>
+					</div>
+				</div>
+				<div class="layer col-md-6">
+					<div class="b-skew wow fadeIn" data-wow-duration="2s" data-wow-delay="1200ms">
+						<div class="main__form">
+							<form class="form" action="#">
+								<h3>ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</h3>
+								<input type="hidden" name="form_subject" value="бесплатная констультация">
+								<label class="placeholder"><span>Ваше имя</span><input type="text" name="name" required></label>
+								<label class="placeholder"><span>Ваш e-mail</span><input type="email" name="email"></label>
+								<label class="placeholder"><span>Ваш номер телефона</span><input type="text" name="phone" required></label>
+								<button class="btn btn--primary">Заказать</button>
+							</form>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="services">
+		<div class="container">
+			<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Что мы предлагаем</h2>
+
+			<div class="row">
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">
+						<div class="title">
+							<img class="svg" src="img/icon/key.svg" alt="">
+							<h4>САЙТ<br> ПОД КЛЮЧ</h4>
+						</div>
+						<div class="description">Нужен сайт, есть идея или открываете бизнес? Мы поможем создать проект который будет выгодно отличать Вас от конкурентов.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="600ms">
+						<div class="title">
+							<img class="svg" src="img/icon/speakers.svg" alt="">
+							<h4>КОНТЕКСТНАЯ<br> РЕКЛАМА</h4>
+						</div>
+						<div class="description">Есть проект или контекстная реклама, которая не приносит результатов? Наш опытный директолог поможет решить вопрос с настройкой, провести аудит, а так же настроить контекстную рекламу под ключ, которая будет приводить только качественных посетителей на сайт.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1000ms">
+						<div class="title">
+							<img class="svg" src="img/icon/shopping-cart.svg" alt="">
+							<h4>ИНТЕРНЕТ<br> МАГАЗИН</h4>
+						</div>
+						<div class="description">Создадим и настроим интернет-магазин. Наполним товарами. Подключим все формы. Вам останется только запустить рекламу и заниматься развитием бизнеса.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1400ms">
+						<div class="title">
+							<img class="svg" src="img/icon/settings.svg" alt="">
+							<h4>ПОДДЕРЖКА<br> САЙТА</h4>
+						</div>
+						<div class="description">Если для Вас слово хостинг, домен, cms,  бекап темный лес, мы можем взять Ваш сайт на обслуживания.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">
+						<div class="title">
+							<img class="svg" src="img/icon/avatar.svg" alt="">
+							<h4>СОЦИАЛЬНЫЕ<br> СЕТИ</h4>
+						</div>
+						<div class="description">Нужен сайт, есть идея или открываете бизнес? Мы поможем создать проект который будет выгодно отличать Вас от конкурентов.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="600ms">
+						<div class="title">
+							<img class="svg" src="img/icon/smartphone.svg" alt="">
+							<h4>АДАПТАЦИЯ ПОД<br> МОБИЛЬНЫЕ</h4>
+						</div>
+						<div class="description">Есть проект или контекстная реклама, которая не приносит результатов? Наш опытный директолог поможет решить вопрос с настройкой, провести аудит, а так же настроить контекстную рекламу под ключ, которая будет приводить только качественных посетителей на сайт.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1000ms">
+						<div class="title">
+							<img class="svg" src="img/icon/loupe.svg" alt="">
+							<h4>МУЛЬТИ<br> ЛЕНДИНГ</h4>
+						</div>
+						<div class="description">Создадим и настроим интернет-магазин. Наполним товарами. Подключим все формы. Вам останется только запустить рекламу и заниматься развитием бизнеса.</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1400ms">
+						<div class="title">
+							<img class="svg" src="img/icon/minisize-browser.svg" alt="">
+							<h4>НАСТРОЙКИ, ПРАВКИ,<br> РЕДИЗАЙН</h4>
+						</div>
+						<div class="description">Если для Вас слово хостинг, домен, cms,  бекап темный лес, мы можем взять Ваш сайт на обслуживания.</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="portfolio">
+		<div class="container">
+			<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Наши роботы</h2>
+
+			<div class="portfolio-nav wow bounceIn" data-wow-duration="1s" data-wow-delay="200ms">
+				<ul>
+					<li class="active">Все</li>
+					<li data-sort="1">Старт</li>
+					<li data-sort="2">Оптимальный</li>
+					<li data-sort="3">Индивидуальный</li>
+				</ul>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="200ms" data-sort="1" style="background-image: url(img/portfolio/1.jpg)">
+						<a href="portfolio.html#kds" target="_blank">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="600ms" data-sort="1" style="background-image: url(img/portfolio/2.jpg)">
+						<a href="portfolio.html#kds2">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="1000ms" data-sort="3" style="background-image: url(img/portfolio/3.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="200ms" data-sort="2" style="background-image: url(img/portfolio/4.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="600ms" data-sort="1" style="background-image: url(img/portfolio/5.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="1000ms" data-sort="1" style="background-image: url(img/portfolio/1.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="200ms" data-sort="2" style="background-image: url(img/portfolio/2.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="600ms" data-sort="3" style="background-image: url(img/portfolio/3.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="1000ms" data-sort="3" style="background-image: url(img/portfolio/4.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="200ms" data-sort="3" style="background-image: url(img/portfolio/5.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="600ms" data-sort="1" style="background-image: url(img/portfolio/1.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+					<div class="col-lg-4 col-sm-6">
+					<div class="portfolio-item wow bounceIn" data-wow-duration="1s" data-wow-delay="1000ms" data-sort="1" style="background-image: url(img/portfolio/2.jpg)">
+						<a href="portfolio.html#kds">Cайт для мебельной компании</a>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="price">
+
+		<div class="container">
+			<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Ваш проект будет следующим</h2>
+			<div class="b-skew wow zoomIn" data-wow-duration="1s" data-wow-delay="200ms">
+				<div class="design-form">
+					<form action="#" class="form">
+						<h3>Получи уникальный дизайн всего в пару кликов!</h3>
+						<input type="hidden" name="form_subject" value="Получить дизайн">
+						<label class="placeholder"><span>Ваше имя</span><input type="text" name="name" required></label>
+						<label class="placeholder"><span>Ваш телефон</span><input type="text" name="phone" required></label>
+						<button class="btn btn--primary">Получить дизайн</button>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="container">
+			<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Наши тарифы на сайт</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-md-4">
+					<div class="price-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="200ms">
+						<div class="title">Старт</div>
+						<div class="table">
+							<ul>
+								<li><span>item 1</span></li>
+								<li><span>item 2</span></li>
+								<li><span>item 3</span></li>
+								<li><span>item 4</span></li>
+								<li><span>item 5</span></li>
+							</ul>
+						</div>
+						<a href="#" data-modal=".modal-form" class="btn btn--purple reverse">Заказать</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="price-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="400ms">
+						<div class="title">Оптимальный</div>
+						<div class="table">
+							<ul>
+								<li><span>item 1</span></li>
+								<li><span>item 2</span></li>
+								<li><span>item 3</span></li>
+								<li><span>item 4</span></li>
+								<li><span>item 5</span></li>
+								<li><span>item 6</span></li>
+								<li><span>item 7</span></li>
+							</ul>
+						</div>
+						<a href="#" data-modal=".modal-form" class="btn btn--purple reverse">Заказать</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="price-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="600ms">
+						<div class="title">Индивидуальный</div>
+						<div class="table">
+							<ul>
+								<li><span>item 1</span></li>
+								<li><span>item 2</span></li>
+								<li><span>item 3</span></li>
+								<li><span>item 4</span></li>
+								<li><span>item 5</span></li>
+							</ul>
+						</div>
+						<a href="#" data-modal=".modal-ind" class="btn btn--purple reverse">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="faq">
+		<div class="container">
+
+			<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">ЧАСТЫЕ ВОПРОСЫ</h2>
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<ul class="faq-items wow zoomIn" data-wow-duration="1s" data-wow-delay="200ms">
+						<li>
+							<a href="#">Какой тарифный план выбрать?</a>
+							<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, aspernatur!</div>
+						</li>
+						<li>
+							<a href="#">Сайт или Лендинг?</a>
+							<div>ipsum dolor sit amet, consectetur adipisicing.</div>
+						</li>
+						<li>
+							<a href="#">Почему веб-студия?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+						<li>
+							<a href="#">Нужен ли мне брендинг?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+						<li>
+							<a href="#">Почему адаптив необходим?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<ul class="faq-items wow zoomIn" data-wow-duration="1s" data-wow-delay="600ms">
+						<li>
+							<a href="#">Что значат цвета в дизайне?</a>
+							<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, aspernatur!</div>
+						</li>
+						<li>
+							<a href="#">Почему мне именно к вам?</a>
+							<div>Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+						</li>
+						<li>
+							<a href="#">Как увеличить конверсию?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+						<li>
+							<a href="#">Важна ли история бренда?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+						<li>
+							<a href="#">Какую CMS использовать?</a>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="faq-form ml-lg-auto wow zoomIn" data-wow-duration="1s" data-wow-delay="1000ms">
+						<img src="img/faq-form.jpg" alt="" class="img-responsive">
+						<form action="" class="form">
+						<input type="hidden" name="form_subject" value="Получить дизайн">
+							<label class="placeholder"><span>Ваше имя</span><input type="text" name="name" required></label>
+							<label class="placeholder"><span>Ваш телефон</span><input type="text" name="phone" required></label>
+							<button class="btn btn--primary">Получить дизайн</button>
+						</form>
+					</div>					
+				</div>
+
+			</div> <!-- row -->
+			<div class="contacts wow rollIn" data-wow-duration="1s" data-wow-delay="200ms" id="contacts">
+				<a class="contacts__number" href="tel:+38 (066) 327 79 35">+38 (066) 327 79 35</a>
+				<address>ул. Михайлова 28/7</address>
+				<div class="social-link">
+					<a href="#"><img src="img/icon/instagram.svg" alt="instagram" width="35"></a>
+					<a href="#"><img src="img/icon/facebook.svg" alt="facebook" width="35"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-auto"><div class="logo">Logo</div></div>
+				<div class="col-md-auto"><a href="#" data-modal=".modal-politica" class="politica">Политика конфиденциальности</a></div>
+				<div class="col-md-auto"><a href="#" data-modal=".modal-form" class="btn btn--purple reverse">Заказать консультацию</a></div>
+				<div class="col-md-auto"><a href="#body" class="arrow btn btn--purple reverse"><img src="img/icon/left-arrow.svg" alt="" width="8" height="12"></a></div>
+			</div>
+		</div>
+	</footer>
+		<div class="copy">© Company name 2018 | All right reserved.</div>
+
+
+
+<!-- MODAL WINDOW start -->
+<div id="overlay" class="overlay">
+
+	<div class="modal-form modal">
+		<div class="modal-close"></div>
+		<!-- content -->
+		<div class="b-skew">
+			<div class="main__form">
+				<form class="form" action="#">
+					<h3>ЗАПОЛНИТЕ ФОРМУ И МЫ С ВАМИ СВЯЖЕМСЯ!</h3>
+					<input type="hidden" name="form_subject" value="Обратный звонок">
+					<label class="placeholder"><span>Ваше имя</span><input type="text" name="name" required></label>
+					<label class="placeholder"><span>Ваш e-mail</span><input type="email" name="email"></label>
+					<label class="placeholder"><span>Ваш номер телефона</span><input type="text" name="phone" required></label>
+					<button class="btn btn--primary">СВЯЗАТЬСЯ</button>
+				</form>
+			</div>						
+		</div>				
+
+	</div>
+
+	<!-- modal ind -->
+	<div class="modal modal-ind">
+		<div class="modal-close"></div>
+		<!-- content -->
+		<div class="price-item">
+			<form action="" class="form-ind">
+
+				<div class="title">Индивидуальный</div>
+				<div class="table">
+					<ul>
+						<li>
+						<span>item 1</span>
+						<input type="checkbox" name="Индивидуальный-1" value="что то там item 1" data-price="5000" id="c1">
+						<label class="checkbox-custom" for="c1"></label>
+						</li>
+						<li>
+						<span>item 2</span>
+						<input type="checkbox" name="Индивидуальный-2" value="item 2" data-price="2000" id="c2">
+						<label class="checkbox-custom" for="c2"></label>
+						</li>
+						<li>
+						<span>item 3</span>
+						<input type="checkbox" name="Индивидуальный-3" value="item 3" data-price="1000" id="c3">
+						<label class="checkbox-custom" for="c3"></label>
+						</li>
+						<li>
+						<span>item 4</span>
+						<input type="checkbox" name="Индивидуальный-4" value="item 4" data-price="3000" id="c4">
+						<label class="checkbox-custom" for="c4"></label>
+						</li>
+						<li>
+						<span>item 5</span>
+						<input type="checkbox" name="Индивидуальный-5" value="item 5" data-price="8000" id="c5">
+						<label class="checkbox-custom" for="c5"></label>
+						</li>
+						<li>
+						<span>item 6</span>
+						<input type="checkbox" name="Индивидуальный-6" value="item 6" data-price="15000" id="c6">
+						<label class="checkbox-custom" for="c6"></label>
+						</li>
+						<li>
+						<span>item 7</span>
+						<input type="checkbox" name="Индивидуальный-7" value="item 7" data-price="125000" id="c7">
+						<label class="checkbox-custom" for="c7"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="calculate-price">0 РУБ.</div>
+				<div class="form">
+					<input type="hidden" name="form_subject" value="Тариф индивидуальный">
+					<label class="placeholder"><span>Ваше имя</span><input type="text" name="name" required></label>
+					<!-- <label class="placeholder"><span>Ваш e-mail</span><input type="email" name="email"></label> -->
+					<label class="placeholder"><span>Ваш номер телефона</span><input type="text" name="phone" required></label>
+				</div>
+				<button class="btn btn--primary">Оформить заказ</button>
+			</form>
+		</div>
+
+	</div>
+
+
+	<div class="modal modal-politica">
+		<div class="modal-close"></div>
+		<h2>политика конфиденциальности</h2>
+		<div class="text-politica">
+			Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Великий ручеек одна однажды, прямо сбить пор переписывается предложения коварный, бросил дал, собрал от всех над алфавит себя вершину ipsum ему своего лучше ее! Ведущими однажды свой переписали вопрос домах меня грустный страна обеспечивает, несколько ему выйти толку живет текста которой агенство составитель заголовок. Это текстами эта деревни, составитель если? Жизни букв страна точках решила строчка ее рукописи своего вершину океана переписали. Образ по всей имеет языком жаренные ведущими lorem своих последний. Там путь сбить инициал запятых она наш ведущими, большого безопасную своего первую ipsum повстречался послушавшись текст дорогу, переулка запятой лучше решила океана оксмокс о переписывается ручеек моей переписали. Повстречался послушавшись пунктуация щеке моей грустный буквоград если страну вопроса правилами, на берегу реторический инициал, он журчит алфавит раз о решила текста обеспечивает коварный! Имеет это продолжил агенство мир, ведущими коварных сих, буквенных реторический страну города ему первую оксмокс семь правилами! Всемогущая заманивший по всей его которой ты осталось, напоивший строчка ручеек, заглавных злых гор сих одна он свое предложения алфавит первую взгляд себя! Инициал возвращайся ведущими ее первую силуэт большой предупреждал свое, своего которое продолжил? Взобравшись они великий но страну алфавит парадигматическая не вершину по всей напоивший послушавшись подпоясал, ручеек ведущими точках сбить, злых себя маленькая свой семь необходимыми выйти! То текстов запятой даль букв, lorem родного ipsum живет имени наш, океана. До ручеек, которой, необходимыми lorem напоивший своих вопрос решила переписали над строчка. Сбить первую всеми языком букв залетают силуэт свой возвращайся текстами над, семантика всемогущая вдали от всех дал. До рукописи реторический щеке ты языкового не правилами деревни родного которой приставка букв жизни последний взобравшись грустный, одна рыбного выйти напоивший, предупреждал парадигматическая заглавных знаках. Раз курсивных по всей рекламных, всеми рыбного от всех даже имеет переписали то путь буквоград, единственное одна океана инициал последний подзаголовок коварный! Реторический силуэт деревни несколько, маленький ручеек великий пунктуация она последний снова, ведущими большого. Щеке, злых лучше, он живет бросил на берегу над, пунктуация подпоясал до речью но. Заголовок одна вопрос, продолжил назад переписывается все маленькая, деревни речью. Путь проектах использовало жаренные необходимыми себя предупреждал рыбными, это все домах строчка знаках обеспечивает ее рыбного несколько снова переписали раз напоивший последний на берегу если своего агенство? Продолжил текст повстречался грустный маленькая вопроса агенство великий. Силуэт послушавшись, бросил большого одна путь всеми но дал щеке безорфографичный напоивший свое, запятых взгляд повстречался толку раз маленькая. Безорфографичный, большого жаренные последний вопроса запятой если даль текстов переписывается, над не снова что эта это сих они своих от всех которой, там одна, свой но безопасную. Путь заголовок то путь, великий все встретил, запятой которое большой заглавных своих дороге, рыбными пунктуация ручеек коварный обеспечивает, жаренные домах по всей последний подпоясал бросил ему мир возвращайся океана власти. Свое букв толку обеспечивает на берегу власти точках сих пор он текстами, живет, это, назад свою речью. Журчит путь вскоре над, пунктуация всемогущая строчка снова домах диких которое своего имени ведущими единственное что одна ты свой это текстов оксмокс! Текстов проектах, грамматики, путь эта злых ему? Собрал запятой единственное имеет. Гор это, первую предложения осталось реторический заманивший все буквенных его! Щеке свой осталось снова одна своих, напоивший себя! Своего заманивший составитель щеке, грустный, скатился которое своего буквоград запятых подпоясал, повстречался языком до необходимыми переулка, живет власти. Переулка заглавных гор даль, путь строчка речью предупредила текста предложения! Рот, великий, над. Прямо одна осталось снова, рыбными над, большого от всех пояс рукопись океана эта оксмокс вскоре языкового образ силуэт, текстами заманивший знаках ему города, даже снова семантика! Страну дороге, моей своих заглавных всеми страна парадигматическая дорогу собрал рот буквенных запятых, алфавит назад агенство выйти текстами, раз жизни меня пояс наш родного букв семь текста знаках? Имеет даль моей семь, не вершину эта журчит выйти пояс вопроса себя маленькая вскоре мир свой, снова, одна пустился парадигматическая лучше города! Букв наш запятой живет его то, рыбными, предложения семь ipsum грамматики снова однажды от всех назад коварных несколько сбить грустный, вершину, бросил языкового продолжил приставка прямо! Его, обеспечивает лучше рот это живет путь текст! Всеми если даль имеет переписали журчит безопасную злых реторический, продолжил букв одна, власти даже пор, алфавит меня текст деревни. Она повстречался, вершину взгляд родного рукописи гор правилами живет маленький, океана рыбными, букв! Свой, живет за маленькая, послушавшись наш ручеек. Гор это, от всех правилами деревни инициал продолжил ему подзаголовок, диких своих маленький лучше сбить. Коварных путь дороге наш вершину раз ты эта собрал взобравшись использовало толку, моей, рукопись буквоград лучше. Если lorem ее, пунктуация назад, живет заманивший. Запятых, вершину. Первую осталось, подзаголовок. Рекламных заголовок всемогущая о большого одна выйти коварных, необходимыми, бросил. Скатился дорогу свою грустный диких но гор, взобравшись ее наш вершину, даль которое океана буквоград вопроса послушавшись до путь. Ее, имеет страна, алфавит повстречался дал буквоград, власти деревни жизни от всех даже возвращайся. Своих одна пояс она себя решила! Буквоград буквенных пустился заглавных, большого встретил великий переписывается путь страна своего осталось использовало то, продолжил, жаренные знаках грустный живет букв мир составитель даль гор обеспечивает имеет? Реторический журчит имени единственное меня, текстами свой встретил ты о буквенных букв языком выйти буквоград что правилами великий, за образ ее своих агенство, они вершину? Скатился они щеке всемогущая это гор ipsum ведущими о на берегу рекламных, сбить, даже но рыбного осталось толку букв жизни? Которое не сбить великий большой, переписывается если назад щеке ipsum. Коварный вдали это над грустный семантика ему они гор осталось домах силуэт журчит толку собрал, продолжил, lorem дороге возвращайся буквенных путь своего власти реторический. Себя эта одна пояс lorem заманивший курсивных переулка, океана свое предупреждал собрал снова гор родного повстречался власти. Составитель знаках послушавшись речью дороге единственное рыбными запятой безопасную. Запятых о предупреждал все, свое маленький инициал сих ipsum языкового они себя на берегу. Они безорфографичный заголовок, составитель! Не рукопись собрал но своего которое, приставка за злых переулка, свой пояс лучше, даль безопасную которой моей снова текста эта. Продолжил ipsum скатился маленький речью рукопись грамматики? Реторический коварный рукопись напоивший оксмокс рыбными буквоград великий точках даже однажды повстречался рукописи вдали дал пунктуация, прямо продолжил, большой языкового инициал знаках. Семь щеке, ты заглавных единственное предложения она океана языкового путь оксмокс, там за вскоре прямо дал свой. Заглавных, грустный которое залетают собрал лучше снова власти наш. Над что своего оксмокс путь, себя продолжил текст.
+		</div>
+	</div>
+
+
+<!-- 	<div class="modal modal-send">
+		<div class="modal-close"></div>
+		<div class="txt">Заявка успешно оправлена</div>
+	</div> -->
+
+</div>
+
+<!-- MODAL WINDOW end -->
+
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

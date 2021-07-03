@@ -1,0 +1,142 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+@keyframes s1
+	from
+		left: -1000px
+	50%
+		left: 50px
+		transform: translateY(-50%) skewX(5deg)
+	60%
+		left: -50px
+		transform: translateY(-50%) skewX(-5deg)
+	70%
+		left: 75px
+		transform: translateY(-50%) skewX(5deg)
+	80%
+		left: -25px
+		transform: translateY(-50%) skewX(-5deg)
+	90%
+		left: 50px
+		transform: translateY(-50%) skewX(5deg)
+
+	to
+		left: 0px
+@keyframes s2
+	from
+		top: 0
+	to
+		top: -60px
+@keyframes s3
+	from
+		box-shadow: 0 0 10px 1px #111
+	to
+		opacity: 0.7
+		width: 65%
+		right: 10px
+		box-shadow: 0 0 10px 15px #111
+body
+	margin: 0
+	padding: 0
+	overflow: hidden
+
+.window
+	background: linear-gradient(to bottom, rgba(18,53,99,1) 0%,rgba(26,98,137,1) 100%)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	min-width: 768px !important
+	min-height: 420px !important
+	img
+		max-height: 100%
+		max-width: 100%
+		width: 480px
+		position: relative
+		animation: s2 1s infinite
+		animation-delay: 3s
+		animation-direction: alternate
+
+
+
+	.wrapImg
+		position: absolute
+		left: -1000px
+		top: 50%
+		transform: translateY(-50%) skewX(0)
+		animation: s1 1s
+		animation-delay: 2s
+		animation-fill-mode: forwards
+		.wrapImg2
+			position: relative
+			transition: left 6s ease-in-out, transform 2.4s ease
+			left: 0
+			&.active
+				left: -500px
+				transform: rotateY(-35deg)
+			&.active2
+				transform: rotateY(35deg)
+	.sten
+		background-color: #111
+		width: 60%
+		height: 40px
+		position: absolute
+		bottom: 15%
+		right: 20px
+		animation: s3 1s infinite
+		animation-delay: 3s
+		animation-direction: alternate
+		border-radius: 50%
+		z-index: -1
+		
+	#timer1
+		position: absolute
+		top: 50%
+		right: -100%
+		animation: timer 1s
+		animation-delay: 1s
+		animation-fill-mode: forwards
+	.h1
+		position: absolute
+		right: 5%
+		top: 10%
+		h1
+			color: #fff
+			text-shadow: 1px 1px 14px #aff
+			text-transform: uppercase
+			font-size: 55px
+			margin: 0
+			animation: qh 0.2s infinite
+			animation-direction: alternate
+			transition: transform 1s ease, opacity 1s ease
+			opacity: 0
+			transform: translateY(-9999px)
+			&.animationH1
+				opacity: 1
+				transform: translateY(0)
+.wh
+	max-width: 1280px
+	max-height: 720px
+	width: 100%
+	height: 100%
+	margin: 0 auto
+	position: relative
+@keyframes qh
+	from
+		text-shadow: 1px 1px 14px #aff
+	to
+		text-shadow: 1px 1px 20px #fff
+@keyframes timer
+	from
+		right: -100%
+		transform: skewX(45deg)
+	60%
+		transform: skewX(-10deg)
+		right: 40%
+	to
+		
+		transform: skewX(0)
+		right: 10%

@@ -1,0 +1,12 @@
+<div class="table-condition-white">
+                          <p>Анализ законности <br>строительства</p>
+                      </div>
+                      <div class="teble-cell-whete">
+                              <img src="img/yes.png" alt="">
+                      </div>
+                       <div class="teble-cell-whete teble-cell-whete-2">
+                              
+                       </div>
+                       <div class="teble-cell-whete teble-cell-whete-2">
+                              
+                       </div>

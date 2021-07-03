@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Billow</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<!-- popup newsletter -->
+	<div id="newsletter" class="white-popup mfp-hide">
+		<h2>Newsletter</h2>
+		<p>Enter your email adress to join<br> our newsletter</p>
+		<form action="#">
+			<div class="input-group">
+				<input type="email" name="email">
+				<span>Email</span>
+			</div>
+			<div class="result" data-success="success" data-error="error">				
+				<button type="submit"><i><img src="img/icon/signup.svg" width="37" alt="" tabindex="-1"></i>Signup</button>
+			</div>		
+		</form>
+		<button title="Close (Esc)" type="button" class="mfp-close" onClick="mfpClose()"><img src="img/icon/cross.svg" alt="" width="19"></button>
+	</div>
+	<!-- Custom HTML -->
+
+	<div id="page">
+		<header>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-auto mr-auto">
+						<div class="logo"><img src="img/icon/Billow.svg" alt="" width="194"></div>
+					</div>
+					<div class="col-auto">
+						<nav>
+							<ul>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#roadmap">Roadmap</a></li>
+								<li><a href="#wallets">Wallets</a></li>
+								<li><a href="#why">Features</a></li>
+								<li><a href="#join">Get Billow</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="home" class="main">
+			<div class="container">
+
+				<div class="row justify-content-between align-items-end">
+					<div class="col-auto">
+						<div class="main-title">
+							<h1 class="layer" data-depth="0.8">Billow</h1>
+							<span class="layer" data-depth="0.2">digital currency</span>
+						</div>
+
+					</div>
+					<div class="col-2">
+						<div class="main-item">
+
+							<div class="circle-item anim">
+									<a href="#" class="circle-link"></a>
+									<i class="icon layer" data-depth="0.5"><object class="icon--scale" type="image/svg+xml" data="img/icon/Whitepaper.svg" width="59"></object></i>
+									<span>Whitepaper</span>				
+							</div>
+
+							<div class="circle-item anim">
+									<a href="#newsletter" class="circle-link open-popup-link" tabindex="-1"></a>
+									<i class="icon layer" data-depth="0.5"><object class="icon--scale" type="image/svg+xml" data="img/icon/Newsletter.svg" width="38"></object></i>
+									<span>Join newsletter</span>				
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<p class="main-desc">secured by cryptography and issued through a decentralized<br> and advanced mining market</p>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container">
+				<h2>What is Billow?</h2>
+				<h3>Billow is an innovative cryptocurrency</h3>
+				<p class="small">A form of digital currency secured by cryptography and issued through a decentralized and advanced mining market.<br> 
+					Based on Dash, it's an enhanced version, featuring the masternode technology with 50% Reward, near-instant<br> 
+					and secure payments as well as anonymous transactions.
+				</p>
+			</div>
+		</section>
+		
+		<section id="statistics" class="statistics">
+			<div class="container">
+				<div class="circle-item large m-auto">
+					<h2>Statistics</h2>
+					<h3>Live Network Statistics</h3>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="count-item">
+							<i class="icon"><object data="img/icon/Network.svg" type="image/svg+xml" width="70"></object></i>
+							<p>Network (MH/s)</p>
+							<div class="countTo" data-decimals="4" data-from="0" data-to="3973.3964" data-speed="5000">0</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="count-item">
+							<i class="icon"><object data="img/icon/Difficulty.svg" type="image/svg+xml" width="49"></object></i>
+							<p>Difficulty</p>
+							<div class="countTo" data-decimals="5" data-from="0" data-to="1519.96302" data-speed="5000">0</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="count-item">
+							<i class="icon"><object data="img/icon/Block.svg" type="image/svg+xml" width="49"></object></i>
+							<p>Current Block</p>
+							<div class="countTo" data-decimals="0" data-from="0" data-to="68025" data-speed="5000">0</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="count-item">
+							<i class="icon"><object data="img/icon/Supply.svg" type="image/svg+xml" width="56"></object></i>
+							<p>Coin Supply</p>
+							<div class="countTo" data-decimals="1" data-from="0" data-to="1870360.0" data-speed="5000">0</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id="roadmap" class="roadmap">
+			<div class="container">
+				<h2>Roadmap</h2>
+				<p class="semibold">The roadmap is summarized below and more information<br> can be found in the white paper</p>
+				<div class="row justify-content-center">
+					<div class="col-md-2">
+						<div class="circle-item small justify-content-center wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-year">2018</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+
+						<div class="roadmap-item wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-q">q1</div>
+							<ul class="roadmap-list">
+								<li>Launch Website</li>
+								<li>Windows, Mac and Linux Wallet Release</li>
+								<li>Get listed on Exchanges [4/4]</li>
+								<li>Get listed on Coinmarketcap</li>
+								<li>Get listed on Masternode Monitor Website</li>
+								<li>Get listed on Whattomine</li>
+							</ul>
+						</div>
+
+						<div class="roadmap-item wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-q">q2</div>
+							<ul class="roadmap-list">
+								<li>WhitePaper ( In Progress )</li>
+								<li>Mobile Wallets ( In Progress )</li>
+								<li>Web Wallet ( In Progress )</li>
+								<li>Payment Gateway - GoBytePay ( In Progress )</li>
+								<li>Payment Gateway - Apps ( In Progress )</li>
+								<li>Get listed on Exchanges [1/3]</li>
+								<li>Attract Merchants</li>
+							</ul>
+						</div>
+
+						<div class="roadmap-item wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-q">q3</div>
+							<ul class="roadmap-list">
+								<li>Electronics Shop</li>
+								<li>Market Module - GoByte Market(Start)</li>
+								<li>Exchange Development (Start)</li>
+								<li>Marketing and Awareness campaign</li>
+								<li>Hiring PR team</li>
+								<li>Attract Merchants</li>
+							</ul>
+						</div>
+
+						<div class="roadmap-item wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-q">q4</div>
+							<ul class="roadmap-list">
+								<li>Start dev. of POS Terminals</li>
+								<li>Testing GBX payments on vending machines</li>
+								<li>Development of the "Overwatch" module (Start)</li>
+								<li>Development of the "Mint" module (Start)</li>
+								<li>Start building the mining farm. Share profits among MasterNode owners</li>
+								<li>Hardware wallets for GoByte tokens</li>
+								<li>Attract Merchants</li>
+							</ul>
+						</div>
+
+					</div>
+				</div><!-- row -->
+
+				<div class="row justify-content-center">
+					<div class="col-md-2">
+						<div class="circle-item small justify-content-center wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-year">2019</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+
+						<div class="roadmap-item wow fadeInUp" data-wow-duration="1s">
+							<div class="roadmap-q">q1</div>
+							<ul class="roadmap-list">
+								<li>Smart Contracts</li>
+								<li>Development of the "Social" platform (Start)</li>
+								<li>New MasterNode feature</li>
+								<li>Attract Merchants</li>
+							</ul>
+						</div>
+
+					</div>
+				</div><!-- row -->
+
+
+			</div><!-- container -->
+		</section>
+
+		<section id="wallets" class="wallets">
+			<div class="container">
+				<h2>Wallets</h2>
+				<p class="semibold">Download the GoByte wallet according to your operating system.<br> You have 100% control over your GoByte tokens.</p>
+				
+
+				<div class="row align-items-end">
+
+					<div class="col-md-4">
+						<div class="circle-item middle">
+							<i class="icon layer" data-depth="0.2"><object data="img/icon/mac.svg" type="image/svg+xml" width="40"></object></i>
+							<h3>Mac OS X</h3>
+							<div class="version">v0.12.13</div>
+						</div>
+						<a href="#" class="download">Download now</a>
+					</div>
+					<div class="col-md-4">
+					<a href="#" class="download">Download 32-bit</a>
+						<div class="circle-item middle">
+							<i class="icon layer" data-depth="0.2"><object data="img/icon/Windows.svg" type="image/svg+xml" width="53"></object></i>
+							<h3>Windows</h3>
+							<div class="version">v0.12.13</div>
+						</div>
+						<a href="#" class="download">Download 64-bit</a>
+					</div>
+					<div class="col-md-4">
+						<div class="circle-item middle">
+							<i class="icon layer" data-depth="0.2"><object data="img/icon/Linux.svg" type="image/svg+xml" width="42"></object></i>
+							<h3>Linux</h3>
+							<div class="version">v0.12.13</div>
+						</div>
+						<a href="#" class="download">Download now</a>
+					</div>
+
+				</div><!-- /.row -->
+
+			</div><!-- container -->
+		</section>
+		
+
+		<section id="why" class="why">
+			<div class="container">
+				<h2>Why use Billow?</h2>
+
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+						<div class="why-img"><img src="img/why-img-1.png" alt=""></div>
+					</div>
+					<div class="col-md-5">
+						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Super Fast<br> & Secure</h3>
+						<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Your time is valuable. InstantSend payments confirm<br> in less than a second.</p>
+						<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="200ms">Security you can count on. Transactions are confirmed<br> by miners and masternode servers hosted around the world.</p>
+					</div>
+				</div>
+				<div class="row align-items-center flex-md-row-reverse justify-content-between">
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+						<div class="why-img"><img src="img/why-img-2.png" alt=""></div>
+					</div>
+					<div class="col-md-5">
+						<h3 class="wow fadeInUp" data-wow-duration="1s">Asic Resistant<br> & Difficulty Retargeting</h3>
+						<p class="wow fadeInUp" data-wow-duration="1s">Superior, efficient and fair mining that runs using GPU<br> Difficulty retarget using Dark Gravity Wave.</p>
+					</div>
+				</div>
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+						<div class="why-img"><img src="img/why-img-3.png" alt=""></div>
+					</div>
+					<div class="col-md-5">
+						<h3 class="wow fadeInUp" data-wow-duration="1s">Anonymous<br> & Masternodes</h3>
+						<p class="wow fadeInUp" data-wow-duration="1s">Protect your financial information. PrivateSend ensures your activity history and balances are private.</p>
+						<p class="wow fadeInUp" data-wow-duration="1s">Masternodes help keep integrity of the network and enable support for PrivateSend and InstantSend</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+		<section id="join" class="join">
+			<div class="container">
+				<h2>Join Our Community</h2>
+
+				<div class="row justify-content-center align-items-center">
+					<div class="col-lg-2">
+						<a href="#" class="social-link"><img src="img/icon/facebook.svg" alt="" width="124"></a>
+					</div>
+					<div class="col-lg-2">
+						<a href="#" class="social-link"><img src="img/icon/Discord.svg" alt="" width="99"></a>
+					</div>
+					<div class="col-lg-2">
+						<a href="#" class="social-link"><img src="img/icon/Telegram.svg" alt="" width="130"></a>
+					</div>
+					<div class="col-lg-2">
+						<a href="#" class="social-link"><img src="img/icon/Twitter.svg" alt="" width="125"></a>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-lg-8"><div class="divider"></div></div>
+				</div><!-- /.row -->
+				
+				<div class="circle-item">
+					<a href="#" class="circle-link"></a>
+					<span class="join-span-top">For more info read</span>
+					<i class="icon layer" data-depth="0.2"><object data="img/icon/Whitepaper.svg" type="image/svg+xml" width="59"></object></i>
+					<span>Whitepaper</span>
+				</div>
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="logo"><img src="img/icon/Billow.svg" alt="" width="194"></div>
+				<div class="copy">Copyright ©2017-2018 Billow.</div>
+				<p>All Trademarks Are The Property of Their Respective Owner.</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

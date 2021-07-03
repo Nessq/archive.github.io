@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script>
+		var G_SITE = "ЖК КРИСТЕР ГРАД";
+	</script>
+	<meta charset="utf-8">
+
+	<title>ЖК КРИСТЕР ГРАД</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#ffcc33">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#ffcc33">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffcc33">
+
+	
+</head>
+
+<body>
+
+	<div class="preload" style="opacity: 1; transition: all 1s ease; position: fixed; z-index: 99999999; width: 100%; height: 100%; background-color: #fff;"></div>
+
+	<header>
+		<div class="navbar-mobile" style="display: none;">
+			<div class="navbar-mobile-flex">
+				<div class="navbar-mobile-col">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="navbar-mobile-col">
+					<a href="tel:‎+38‎0978229517" class="phone-number">+38 (097) 822-95-17</a>
+					<button id="menu-btn" class="menu-toggle">
+							<span class="dash"></span>
+							<span class="dash"></span>
+							<span class="dash"></span>
+					</button>
+				</div>
+			</div>
+			<nav style="display: none">
+				<ul>
+					<li><a href="#a-main">Главная</a></li>
+					<li><a href="#a-main-slider">Фотографии</a></li>
+					<li><a href="#a-filter">Планировки</a></li>
+					<li><a href="#a-content-slider">Инфраструктура</a></li>
+					<li><a href="#a-docs">Документы</a></li>
+					<li><a href="#a-footer-map">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="navbar-scroll">
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#a-main">Главная</a></li>
+						<li><a href="#a-main-slider">Фотографии</a></li>
+						<li><a href="#a-filter">Планировки</a></li>
+						<li><a href="#a-content-slider">Инфраструктура</a></li>
+						<li><a href="#a-docs">Документы</a></li>
+						<li><a href="#a-footer-map">Контакты</a></li>
+						<li><a data-fancybox data-src="#modal-call" href="javascript:;" class="button"><span class="animation-btn"></span><span class="js__btn-content" data-tell="+38 (097) 822-95-17">+38 (097) 822-95-17</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+					</div>
+					<div class="col-md-5 mob-nav">
+						<nav>
+							<ul>
+								<li><a href="#a-main">Главная</a></li>
+								<li><a href="#a-main-slider">Фотографии</a></li>
+								<li><a href="#a-filter">Планировки</a></li>
+								<li><a href="#a-content-slider">Инфраструктура</a></li>
+								<li><a href="#a-docs">Документы</a></li>
+								<li><a href="#a-footer-map">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3">
+						<div class="navbar__contact">
+							<p>Горячая линия:</p>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="phone-number">+38 (097) 822-95-17</a>
+							<a data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar__bottom-line">
+			<div class="container">
+				<p>ЖК "КРИСТЕР ГРАД" Подольский район</p>
+			</div>
+		</div>
+
+	</header>
+	
+
+	<section id="a-main" class="main" style="background-image: url(img/main.jpg);">
+		
+		<div class="fluid-block">
+			<h1>Жилой комплекс «КРИСТЕР ГРАД» в Киеве</h1>
+			<p>Апартаменты площадью от 43,04 м² по цене от 836 110 гривен</p>
+			<a data-fancybox data-src="#modal-download" href="javascript:;" class="button"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a>
+		</div>
+
+	</section>
+
+	<div class="main-slider" id="a-main-slider">
+		<div class="main-slider__map">
+			<div id="map"></div>
+
+		</div>
+		<div class="main-slider__btn">
+			<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="main-slider__button"><span class="animation-btn"></span><span class="icon-edit"></span>Записаться на просмотр</a>
+		</div>
+		<div class="main-slider__slider">
+			<div class="owl-carousel main-owl">
+				
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/1.png)"><a href="img/main-owl/1.png" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/2.jpg)"><a href="img/main-owl/2.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/3.jpg)"><a href="img/main-owl/3.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/4.jpg)"><a href="img/main-owl/4.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/5.png)"><a href="img/main-owl/5.png" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/6.jpg)"><a href="img/main-owl/6.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/7.png)"><a href="img/main-owl/7.png" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/8.jpg)"><a href="img/main-owl/8.jpg" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/9.png)"><a href="img/main-owl/9.png" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+				<div class="item">
+					<div class="main-owl__photo" style="background-image: url(img/main-owl/10.png)"><a href="img/main-owl/10.png" data-fancybox="gallery" class="slide-hover"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<section class="section filter" id="a-filter">
+		
+		<div class="container">
+			<div class="section-title">
+				<h2>Планировки и цены на апартаменты ЖК «КРИСТЕР ГРАД»</h2>
+				<p>Вы можете выбрать, забронировать и купить апартаменты<br>в жилом комплексе «КРИСТЕР ГРАД» в нашем разделе с планировками и ценами</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="filter-calc">
+						<div class="filter-calc__count-rooms">
+							<p>Количество комнат:</p>
+						</div>
+						<div class="filter-calc__sqs">
+							<p>Метраж м²:</p>
+							<div class="filter-calc__sq" data-sq-min="43" data-sq-max="66">43-66</div>
+							<div class="filter-calc__sq" data-sq-min="54" data-sq-max="79">54-79</div>
+							<div class="filter-calc__sq" data-sq-min="74" data-sq-max="1102">74-102</div>
+						</div>
+						<div class="filter-calc__slider">
+							<p>Цена, тыс грн:</p>
+							<div id="slider-range"></div>
+							<div class="pips"></div>
+						</div>
+						<div class="filter-calc__count">
+							<p>Выбрано <span class="count-curennt">13</span> из <span class="count-all">13</span></p>
+						</div>
+						<div class="filter-calc__btn hidden-xs">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="filter-content scrollbar-inner">
+
+						<script>
+							var FILT =	[
+							['sort:-комнатные апартаменты','room:1', 'sq:43.04', 'price:836110', 'src:img/filter/1-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:48.18', 'price:845334', 'src:img/filter/1-2.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:48.33', 'price:847779', 'src:img/filter/1-3.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:48.71', 'price:830125', 'src:img/filter/1-4.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:54.0', 'price:913200', 'src:img/filter/1-5.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:1', 'sq:54.9', 'price:889049', 'src:img/filter/1-6.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:1', 'sq:54.9', 'price:934870', 'src:img/filter/1-7.png', 'sold:false'],
+
+							['sort:-комнатные апартаменты','room:2', 'sq:65.77', 'price:1105474', 'src:img/filter/2-1.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:71.43', 'price:1154510', 'src:img/filter/2-2.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:2', 'sq:72.10', 'price:1163130', 'src:img/filter/2-3.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:74.65', 'price:1250000', 'src:img/filter/2-4.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:2', 'sq:74.86', 'price:1207730', 'src:img/filter/2-5.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:2', 'sq:74.86', 'price:1235600', 'src:img/filter/2-6.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:76.53', 'price:1230909', 'src:img/filter/2-7.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:2', 'sq:78.29', 'price:1300000', 'src:img/filter/2-8.png', 'sold:true'],
+
+							['sort:-комнатные апартаменты','room:3', 'sq:94.63', 'price:1364820', 'src:img/filter/3-1.png', 'sold:true'],
+							['sort:-комнатные апартаменты','room:3', 'sq:95.16', 'price:1372240', 'src:img/filter/3-2.png', 'sold:false'],
+							['sort:-комнатные апартаменты','room:3', 'sq:97.85', 'price:1409900', 'src:img/filter/3-3.png', 'sold:false'],
+							
+
+							]
+						</script>
+
+
+					</div>
+
+					<div class="filter-calc__btn mobile hidden-lg hidden-md hidden-sm">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="button">Запросить все планировки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="section presentation bg">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Презентация ЖК «КРИСТЕР ГРАД»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a data-fancybox data-src="#modal-download" href="javascript:;"><img src="img/book.png" alt="" class="img-responsive"></a>
+			</div>
+			<div class="center"><a data-fancybox data-src="#modal-download" href="javascript:;" class="button button--section"><span class="animation-btn"></span>Скачать презентацию <i class="button--pdf"></i></a></div>
+		</div>
+
+	</section>
+
+
+	<section class="section content-slider" id="a-content-slider">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Инфраструктура ЖК «КРИСТЕР ГРАД»</h2>
+				<p>Застройщик комплекса Корпорация «ДБК-ЖИТЛОБУД» спроектировали инфраструктуру<br> ЖК «КРИСТЕР ГРАД» так, чтобы обеспечить комфорт и только положительные отзывы</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+	<style>
+		.content-owl__photo p{
+			text-shadow: 2px 2px 5px #000;
+		}
+	</style>
+		<div class="owl-carousel content-owl1">
+			
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>МЕТРО</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>парк Березовая Роща</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/4.png);"><p>РОДДОМ №2</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>Свято – Покровский Храм</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>ТРЦ РЕТРОВИЛЛЬ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>ТЦ ОРНАМЕНТ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/8.jpg);"><p>школа МЕРИДИАН</p></div></div>
+			
+			
+		</div>
+
+		<div class="owl-carousel content-owl2">
+			
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/1.jpg);"><p>МЕТРО</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/3.jpg);"><p>парк Березовая Роща</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/4.png);"><p>РОДДОМ №2</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/5.jpg);"><p>Свято – Покровский Храм</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/6.jpg);"><p>ТРЦ РЕТРОВИЛЛЬ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/7.jpg);"><p>ТЦ ОРНАМЕНТ</p></div></div>
+			<div class="item"><div class="content-owl__photo" style="background-image: url(img/content-owl/8.jpg);"><p>школа МЕРИДИАН</p></div></div>
+
+		</div>
+
+	</section>
+
+
+	<section class="section video">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Видео про ЖК «КРИСТЕР ГРАД»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="video__youtube-container">
+				<iframe width="710" height="400" src="https://www.youtube.com/embed/KsDf1dM4gxc" frameborder="0" allowfullscreen="" style=""></iframe>
+				<img src="img/video-bg.png" alt="" class="img-responsive hidden-xs">
+			</div>	
+		</div>
+
+	</section>
+
+
+	<section class="section s-etap" id="etap">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Ход строительства ЖК «КРИСТЕР ГРАД»</h2>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="etap">
+				<div class="progress-etap" data-start="Tue Jun 01 2015" data-end="Wed Nov 01 2017"></div>	
+			</div>
+
+			<div class="etap__image">
+				<div class="item"><a href="img/etap-image/1__l.jpg" data-fancybox="gallery2"><img src="img/etap-image/1.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/2__l.jpg" data-fancybox="gallery2"><img src="img/etap-image/2.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/3__l.png" data-fancybox="gallery2"><img src="img/etap-image/3.png" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				<div class="item"><a href="img/etap-image/4__l.jpg" data-fancybox="gallery2"><img src="img/etap-image/4.jpg" alt="" class="img-responsive"><span>увеличить</span></a></div>
+				
+			
+				<div class="item" style="width: 100%; text-align: center"><p>1 дом — введен в эксплуатацию в 4 кв. 2016, заселен<br>
+
+2 дом —введен в эксплуатацию в 2 кв. 2017, заселен<br>
+
+3 дом — введен в эксплуатацию в  3 кв. 2017, открыт под заселение
+</p></div>
+			</div>
+		</div>
+	
+	</section>
+
+	<section class="section rostr">
+
+		<div class="container">
+			<div class="section-title">
+				<h2>Рассрочка от застройщика ЖК «КРИСТЕР ГРАД»</h2>
+				<p>Застройщик комплекса «КРИСТЕР ГРАД» предлагает оформить рассрочку</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="center">
+				<div class="fact">до<span>1</span>года<p>Срок погашения</p></div>
+				<div class="fact"><span>35</span>%<p>Первоначальный взнос</p></div>
+				<div class="fact"><span>0</span>%<p>Переплат</p></div>
+			</div>
+
+			<div class="center"><a data-fancybox data-src="#modal-form2" href="javascript:;" class="button button--section"><span class="animation-btn"></span>Воспользоваться рассрочкой</a></div>
+
+		</div>
+
+	</section>
+
+
+	<section class="section docs bg" id="a-docs">
+		<div class="container">
+			<div class="section-title">
+				<h2>Документы и сертификаты ЖК «КРИСТЕР ГРАД»</h2>
+				<p>Документы о введении в эксплуатацию и присвоении почтового адреса</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="docs-wrap center owl-carousel">
+				<div class="docs__item">
+					<a href="img/sert/1.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/2.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/3.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/4.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/5.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/6.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/7.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/8.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/9.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/10.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/11.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+				<div class="docs__item">
+					<a href="img/sert/12.jpg" data-fancybox="gallery3"><span class="slide-hover"></span><img src="img/doc.png" alt=""></a>
+					<p>Сертификат о введении в эксплуатацию</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section footer-map bg" id="a-footer-map">
+		<div class="container">
+			<div class="section-title">
+				<h2>Карта расположения ЖК «КРИСТЕР ГРАД»</h2>
+				<p>ЖК «КРИСТЕР ГРАД» расположен по адресу: г. Киев, ул. Сергея Данченко<br> Запишитесь на экскурсию через наш сайт</p>
+				<div class="ligature"></div>
+			</div>
+		</div>
+
+		<div id="map2"></div>
+		<div class="container">
+			<div class="center">
+				<a data-fancybox data-src="#modal-enroll" href="javascript:;" class="button"><span class="animation-btn"></span>Записаться на экскурсию на объект</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="navbar__logo"><img src="img/logo.png" alt="логотип" class="img-responsive"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="navbar__contact">
+						<p>Горячая линия:</p>
+						<a href="tel:+380978229517" class="phone-number">+38 (097) 822-95-17</a>
+						<a  data-fancybox data-src="#modal-call" href="javascript:;" class="button navbar__button"><span class="animation-btn"></span>Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="prefooter-p">Брокер проекта — компания КиевДомСервис. Вся представленная информация на сайте не является публичной офертой.</p>
+			<p class="prefooter-p">Брокер проекта - Компания КиевДомСервис</p>
+		</div>
+
+		<div class="footer-bottom-line">
+			<div class="container">
+				<div class="fbl__flex">
+					<a href="#">Апартаменты в жилом комплексе  «КРИСТЕР ГРАД»</a>
+					<a href="#">Сайт жилого комплекса «КРИСТЕР ГРАД»</a>
+					<a href="http://www.KDService.com.ua">Сайт брокера проекта КиевДомСервис</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- modal start -->
+
+	<div style="display: none;" id="modal-download">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__book">
+						<img src="img/book.png" alt="book" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Скачайте презентацию <br>
+							комплекса в 1 клик</h2>
+							<p>Укажите свои контакты и мгновенно  <br>получите презентацию с ценами <br> и планировками в формате PDF</p>
+							<input type="hidden" name="type" value="презентация">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Скачать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;" id="modal-form">
+			
+					<form action="" class="form form-download">
+						<h2>Запросить все планировки</h2>
+							<p>Оставьте заявку на получение всех планировок жилого комплекса</p>
+
+							<input type="hidden" name="">
+
+							<input type="hidden" name="type" value="Запросить все планировки">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+		<div style="display: none;" id="modal-form2">
+			
+					<form action="" class="form form-download">
+						<h2>Рассрочка от застройщика</h2>
+							<p>Укажите свои контактные данные для получения информации по рассрочке</p>
+							<input type="hidden" name="type" value="Рассрочка от застройщика">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Отправить запрос</button>
+					</form>
+				
+	</div>
+
+	<div style="display: none;" id="modal-enroll">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-download__image" style="background-image: url(img/enroll.jpg); -ms-background-position-x: right;
+					background-position-x: right;"></div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-download">
+						<h2>Запишитесь на экскурсию комплекса «КРИСТЕР ГРАД»</h2>
+							<p>Укажите свои контакты, менеджер<br> свяжется с вами для уточнения<br> удобного времени экскурсии</p>
+							<input type="hidden" name="type" value="экскурсия">
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	<div style="display: none;" id="modal-call">
+		<div class="modal-flex">
+			<div class="modal-col">
+
+				<div class="myslider">
+					<div class="" style="display: block; left: 50%; margin-left: -95px; top: 0px; opacity: 1; height: 190px; width: 190px; z-index: 2;">
+						<img src="img/expert/1.jpg" alt="">
+						<div class="myname">Ярослав <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: -170px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/2.jpg" alt="">
+						<div class="myname" style="display: block;">Артём <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="display: block; left: 50%; margin-left: 40px; top: 30px; opacity: 0.7; height: 130px; z-index: 1;">
+						<img src="img/expert/4.jpg" alt="">
+						<div class="myname">Владимир <span>Ведущий эксперт</span></div>
+					</div>
+					<div class="" style="opacity: 0;">
+						<img src="img/expert/3.jpg" alt="">
+						<div class="myname">Анна <span>Ведущий эксперт</span></div>
+					</div>
+				</div>
+
+				<div class="myarrows">
+					<div class="myleft"></div>
+					<div class="myright"></div> 
+				</div>
+
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-call">
+						<h2>Закажите звонок эксперта «КРИСТЕР ГРАД»</h2>
+							<p>Выбранный менеджер свяжется с вами <br>в первую же свободную минуту.</p>
+							<input type="hidden" name="type" value="звонок эксперта">
+							<div class="div_like_inp" id="selectcall">
+								<ul class="menu__ selectlink">
+									<span>Позвоните мне</span>
+									<span class="iic arr_down"></span>
+									<li><a href="#" class="cur_val">в ближайшее время</a>
+										<ul class="submenu">
+											<li class="v_bl" style="display:none;"><a href="#">в ближайшее время</a></li>
+											<li><a href="#">с 10:00 до 12:00</a></li>
+											<li><a href="#">с 12:00 до 14:00</a></li>
+											<li><a href="#">с 14:00 до 16:00</a></li>
+											<li><a href="#">с 16:00 до 18:00</a></li>
+											<li><a href="#">с 18:00 до 20:00</a></li>
+											<li><a href="#">завтра</a></li>
+										</ul>
+									</li>
+								</ul>
+								<input type="hidden" name="whencall" value="в ближайшее время">
+								<input type="hidden" name="whocall">
+							</div>
+							<input type="text" name="name" placeholder="Имя" required="required">
+							<input type="text" class="mask validate valid" required="required" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim"><div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+						<button type="submit" class="button">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div style="display: none;" id="modal-item">
+			<div class="modal-flex">
+				<div class="modal-col">
+					<div class="modal-item__image">
+						<img src="img/filter/1.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+				<div class="modal-col">
+					<form action="" class="form form-plan">
+						<p class="modal-item__rooms">1-комнатные апартаменты</p>
+						<p class="modal-item__sq">49.50 м²</p>
+						<p class="modal-item__sqm">Цена за м²: 59 000 грн.</p>
+						<p class="modal-item__price">Стоимость:<span>~12 700 000 Р</span></p>
+						<input type="hidden" name="type" value="планировка">
+						<label for="modal-item-name">Имя</label>
+						<input type="text" name="name" placeholder="Имя" required="required" id="modal-item-name">
+						<label for="modal-item-phone">Телефон</label>
+						<input type="text" class="mask validate valid" required="required" id="modal-item-phone" name="phone" placeholder="Телефон" inputmode="verbatim" x-inputmode="verbatim">
+						<div class="modal-item-select">
+							<label for="selc">Забронировать на:</label>
+							<select name="reserv" id="selc">
+								<option value="3 дня">3 Дня</option>
+								<option value="7 дней">7 Дней</option>
+								<option value="30 дней">30 Дней</option>
+							</select>
+						</div>
+						<div class="rules">
+							<input type="checkbox" class="mycheck" checked="">
+							<span class="polit">Я согласен с <a href="/assets/rules.pdf" target="_blank">политикой конфиденциальности</a></span>
+						</div>
+
+
+						<input type="hidden" name="p_price">
+						<input type="hidden" name="p_sq">
+						<input type="hidden" name="p_rooms">
+						<button type="submit" class="button">Забронировать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: none;" id="modal-send">
+			<h5>Спасибо за заявку</h5>
+			<p>Наш менеджер скоро свяжется с вами.</p>
+		</div>
+
+		<div style="display: none;" id="modal-nosend">
+			<h5>Произошла ошибка</h5>
+			<p>попробуйте еще раз.</p>
+		</div>
+
+
+
+	<!-- modal end -->
+
+	<!-- include -->
+
+	<!-- google map -->
+	<script>
+		function initMap() {
+			var uluru = {lat: 50.498515, lng: 30.427345};
+			var zoom = 15;
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker3.png',
+				map: map
+			});
+			var map2 = new google.maps.Map(document.getElementById('map2'), {
+				zoom: zoom,
+				scrollwheel: false,
+				center: uluru
+			});
+			var marker2 = new google.maps.Marker({
+				position: uluru,
+				icon: 'img/marker3.png',
+				map: map2
+			});
+		}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM8FvH0zSAlNoe7zh0pJsFLs0ITRq931k&callback=initMap">
+</script>
+<!-- google map -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

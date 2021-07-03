@@ -1,0 +1,1 @@
+privat24.privatbank.ua/v24/getExcel?startDate=01.09.2017&endDate=31.03.2018&token=fgbdue8ruh9akjip6jsu6kokk30q64bl

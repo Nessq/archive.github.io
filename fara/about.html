@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+
+<body>
+
+
+	<div class="modal-login" style="display: none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5">
+					<div class="modal-login-form" style='display: none;'>
+						<p>Личный кабинет</p>
+						<form action="">
+							<input type="text" placeholder="Введите логин">
+							<input type="password" placeholder="Введите пароль">
+
+							<input type="checkbox" id="c1">
+							<label for="c1" class="modal-checkbox"><span></span>Запомнить меня</label>
+							<button class="button">Войти в кабинет</button>
+						</form>
+						<img src="img/modal-icon.png" alt=""><a href="#">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="header-logo">
+						<a href="/"><img src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<nav class="header-nav">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</nav>
+					<nav class="header-mobile-nav">
+						<div class="menu-burger">
+							<span class="burger-top"></span>
+							<span class="burger-center"></span>
+							<span class="burger-bottom"></span>
+						</div>
+						<ul style="display: none;">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#modal-login" class="burger-hide">Вход</a></li>
+							<li><a href="#">Регистрация</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-sm-3 hidden-xs">
+					<div class="header-button">
+						<a href="#modal-login">Вход</a>
+						<a href="#" class="button">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="posf"></div>
+	
+	<section class="section-search section-search2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="pre-search"><span>Поиск автозапчасти по коду</span><a href="#">VIN запрос</a></div>
+					<form action="#" class="search-form">
+						<input type="text" placeholder="">
+						<button><img src="img/search-loopa.png" alt=""></button>
+					</form>
+				</div>
+			</div>
+			<div class="row search-nav">
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-1s.png" alt=""></span>Запчасти</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-2s.png" alt=""></span>Шины</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-3s.png" alt=""></span>Масла</a></div>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<div><a href="#"><span><img src="img/category-4s.png" alt=""></span>Аксессуары</a></div>
+				</div>
+				<div class="col-sm-offset-0 col-sm-2 col-xs-offset-3 col-xs-6">
+					<div><a href="#"><span><img src="img/category-5s.png" alt=""></span>Запчасти ТО</a></div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	
+	<section class="section-about-big">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 >О КОМПАНИИ</h3>
+					<div class="bottom-underline"><span></span></div>
+					<p><strong>ФАРА.kz</strong> - это современный интернет-магазин автозапчастей, в котором Вы можете легко 
+						подобрать и приобрести необходимые запасные части от ведущих мировых производителей для 
+						легковых, грузовых автомобилей, мото- и спецтехники.</p>
+						<p>История развития компании начинается в 2006 году с традиционного рознично-оптового 
+							бизнеса, преобразованного в современный интернет-магазин автозапчастей!
+							Секрет нашего бизнеса в договорных отношениях, проверенных временем.</p>
+						</div>
+					</div>
+					<div class="row section-about-client">
+						<div class="col-sm-12">
+							<h4>Став нашим клиентом, Вы получаете:</h4>
+						</div>
+						<div class="col-sm-4">
+							<div class="client-item">
+								<img src="img/about/1.png" alt="">
+								<p>Возможность доставки Вашего 
+									груза в любой город мира</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="client-item">
+									<img src="img/about/2.png" alt="">
+									<p>Работы и быстрое время отклика 
+										на ваши заказы и запросы</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="client-item">
+										<img src="img/about/3.png" alt="">
+										<p>Низкие цены высокую скорость 
+											на автозапчасти </p>
+										</div>
+									</div>
+								</div>
+								<div class="row section-about-client">
+									<div class="col-sm-4">
+										<div class="client-item">
+											<img src="img/about/4.png" alt="">
+											<p>Высочайшее качество сервиса </p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="client-item">
+											<img src="img/about/5.png" alt="">
+											<p>Индивидуальный уровень цен 
+												и индивидуальный подход </p>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="client-item">
+												<img src="img/about/6.png" alt="">
+												<p>Кратчайшие сроки доставки 
+													товара до пункта назначения</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-bg-image" style="background-image: url(img/about/about-bg.jpg);"></div>
+									<div class="container">
+										<div class="row">
+											<div class="col-sm-12 about-contact">
+												<h3>КОНТАКТЫ</h3>
+												<div class="bottom-underline"><span></span></div>
+												<p>Астана улица Бейсековой 3 ТД "Астыкжан"</p> 
+												<p>тел. +7 (701) 6102737</p>
+												<p>Skype: ФАРА.kz</p>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<footer>
+									<div class="container">
+										<div class="row">
+											<div class="col-sm-3">
+												<div class="footer-logo">
+													<img src="img/footer-logo.jpg" alt="">
+													<p>Интернет-магазин по продажам
+														оригинальных и неоригинальных
+														запчастей.</p>
+													</div>
+												</div>
+												<div class="col-sm-3">
+													<div class="footer-list">
+														<ul>
+															<li><a href="#">Гарантия и возврат</a></li>
+															<li><a href="#">Как сделать заказ</a></li>
+															<li><a href="#">Оплата товара</a></li>
+															<li><a href="#">Доставка товара</a></li>
+															<li><a href="#">Акции магазина</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-sm-3">
+													<div class="footer-contact">
+														<div class="footer-address">
+															<img src="img/footer-location.png" alt="">
+															<p>Астана улица Бейсековой 3 ТД "Астыкжан".</p>
+														</div>
+														<div class="footer-tell">
+															<img src="img/footer-phone.png" alt="">
+															<p>+7 (701) 6102737</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-3">
+													<div class="footer-copy">
+														<p>© 2017 Fara.kz. Все права защищены.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</footer>
+									<link rel="stylesheet" href="css/main.min.css">
+									<script src="js/scripts.min.js"></script>
+								</body>
+								</html>
